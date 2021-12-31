@@ -36,3 +36,4 @@ Para o desenvolvimento tecnológico, considere:
 ## Link da aplicação funcional 
 
 
+lorem
