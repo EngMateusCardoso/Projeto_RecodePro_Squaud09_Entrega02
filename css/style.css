@@ -29,6 +29,19 @@ a:hover {
   background-color: #058177;
   color: #fff;
 }
+.h-100 {
+  border-radius: 40px 0;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.h-100 h3 {
+  color: #e23d8c;
+}
+#icon-grid {
+  background-color: #fff0f5;
+  text-align: center;
+}
 .newsletter {
   padding: 20px;
 }
