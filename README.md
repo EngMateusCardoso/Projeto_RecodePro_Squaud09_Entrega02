@@ -38,5 +38,9 @@ Para o desenvolvimento tecnológico, considere:
 ## Link da aplicação funcional 
 
 
+<<<<<<< Updated upstream
 teste pq sou tapado
+>>>>>>> Stashed changes
+=======
+loremm
 >>>>>>> Stashed changes
