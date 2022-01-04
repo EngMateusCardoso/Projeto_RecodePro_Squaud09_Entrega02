@@ -11,17 +11,15 @@ body {
 }
 /*Menu navegação*/
 nav {
-  background-color: #5bc4c3;
+  background-color: #058177;
 }
 nav ul li a {
-  font-weight: bold;
-  font-size: 20px;
+  font-size: larger;
   padding: 7px 13px;
-  color: #fff;
+  color: #fff !important;
 }
 a.active,
 a:hover {
-  background: #058177;
   transition: 0.5s;
   color: #feaec9 !important;
 }
@@ -43,12 +41,15 @@ a:hover {
   text-align: center;
 }
 .newsletter {
-  padding: 20px;
+  padding: 40px;
+  margin-bottom: 30px;
 }
 footer {
   background-color: #058177;
+  padding: 20px;
 }
 footer p,
 footer ul li a {
   color: #fff;
+  text-align: center;
 }
