@@ -27,6 +27,11 @@ a:hover {
   background-color: #058177;
   color: #fff;
 }
+.btn:hover {
+  background-color: #feaec9;
+  color: #fff;
+  border: none;
+}
 .h-100 {
   border-radius: 40px 0;
   text-align: center;

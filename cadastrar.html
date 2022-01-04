@@ -36,6 +36,14 @@
     <!--Menu Navegação-->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
+        <!--Logotipo-->
+        <a class="navbar-brand" href="#"
+          ><img
+            src="imagens/logo_menu.png"
+            alt="Logotipo do projeto Amor na Pele"
+            height="75"
+            class="d-inline-block align-text-top"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,14 +56,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active bg-light" href="cadastrar.html"
-                >Cadastro</a
-              >
+              <a class="nav-link active" href="cadastrar.html">Cadastro</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="parceiros.html">Parceiros</a>
@@ -67,7 +73,7 @@
               <a class="nav-link" href="links.html">Links</a>
             </li>
           </ul>
-
+          <!--Campo de pesquisa
           <form class="form-inline my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
@@ -78,59 +84,68 @@
               Buscar
             </button>
           </form>
-        </div>
+        --></div>
       </div>
     </nav>
-    <br />
-
-    <!--Cards de Cadastro-->
-    <div class="card" style="width: 18rem">
-      <img
-        class="card-img-top"
-        src="imagens/card-cadastro-pessoa.jpg"
-        alt="Card Cadastrar Pessoa"
-      />
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">Cadastrar Pessoa</p>
-        <a href="cadastrarPessoa.html" class="btn btn-primary">Cadastrar</a>
+    <main>
+      <!--Cards de Cadastro-->
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="imagens/card-cadastro-pessoa.jpg"
+          alt="Card Cadastrar Pessoa"
+        />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Cadastrar Pessoa</p>
+          <a href="cadastrarPessoa.html" class="btn btn-primary">Cadastrar</a>
+        </div>
       </div>
-    </div>
 
-    <div class="card" style="width: 18rem">
-      <img
-        class="card-img-top"
-        src="imagens/card-cadastro-empresa.jpg"
-        alt="Card Cadastrar Empresa"
-      />
-      <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text">Cadastrar Empresa</p>
-        <a href="cadastrarEmpresa.html" class="btn btn-primary">Cadastrar</a>
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="imagens/card-cadastro-empresa.jpg"
+          alt="Card Cadastrar Empresa"
+        />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">Cadastrar Empresa</p>
+          <a href="cadastrarEmpresa.html" class="btn btn-primary">Cadastrar</a>
+        </div>
       </div>
-    </div>
-
-    <!--Footer-->
-    <section class="newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="content">
-              <h2>Receba as nossas novidades!</h2>
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Informe o seu endereço de e-mail"
-                />
-                <span class="input-group-btn">
+      <!--Newsletter-->
+      <section class="newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content">
+                <h2>Receba as nossas novidades!</h2>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Informe o seu endereço de e-mail"
+                  />
                   <button class="btn" type="submit">Inscreva-se agora</button>
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="imagens/logo_menu.png" height="80" alt="logotipo" />
+        </div>
+        <div class="col">
+          <p>contato@amornapele.com | (21)99876-5432)</p>
+          <p>&COPY;2021 ONG Amor na Pele. Todos os direitos reservados.</p>
+        </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

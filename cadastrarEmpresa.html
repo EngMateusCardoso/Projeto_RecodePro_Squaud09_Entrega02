@@ -25,6 +25,14 @@
     <!--Menu Navegação-->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
+        <!--Logotipo-->
+        <a class="navbar-brand" href="#"
+          ><img
+            src="imagens/logo_menu.png"
+            alt="Logotipo do projeto Amor na Pele"
+            height="75"
+            class="d-inline-block align-text-top"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,9 +45,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active bg-light" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cadastrar.html">Cadastro</a>
@@ -54,7 +62,7 @@
               <a class="nav-link" href="links.html">Links</a>
             </li>
           </ul>
-
+          <!--Campo de pesquisa
           <form class="form-inline my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
@@ -65,161 +73,170 @@
               Buscar
             </button>
           </form>
-        </div>
+        --></div>
       </div>
     </nav>
-    <br />
-
-    <header>
+    <main>
       <h1 class="titleCadastrarEmpresa">Cadastrar Empresa</h1>
-    </header>
 
-    <!--Formulário-->
-    <form class="cardForm">
-      <div class="form-group">
-        <label for="inputNome" style="color: #e23d8c; font-size: 20px"
-          ><strong>Nome completo</strong></label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="inputNome"
-          placeholder="Nome"
-        />
-      </div>
+      <!--Formulário-->
+      <form class="cardForm">
+        <div class="form-group">
+          <label for="inputNome" style="color: #e23d8c; font-size: 20px"
+            ><strong>Nome completo</strong></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputNome"
+            placeholder="Nome"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputCNPJ" style="color: #e23d8c; font-size: 20px"
-          ><strong>CNPJ</strong></label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="inputCNPJ"
-          placeholder="CNPJ"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputCNPJ" style="color: #e23d8c; font-size: 20px"
+            ><strong>CNPJ</strong></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputCNPJ"
+            placeholder="CNPJ"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputRazaoSocial" style="color: #e23d8c; font-size: 20px"
-          ><strong>Razão Social</strong></label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="inputRazaoSocial"
-          placeholder="Razão social"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputRazaoSocial" style="color: #e23d8c; font-size: 20px"
+            ><strong>Razão Social</strong></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputRazaoSocial"
+            placeholder="Razão social"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputTelefone" style="color: #e23d8c; font-size: 20px"
-          ><strong>Telefone</strong></label
-        >
-        <input
-          type="tel"
-          class="form-control"
-          id="inputTelefone"
-          placeholder="Telefone"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputTelefone" style="color: #e23d8c; font-size: 20px"
+            ><strong>Telefone</strong></label
+          >
+          <input
+            type="tel"
+            class="form-control"
+            id="inputTelefone"
+            placeholder="Telefone"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputEmail" style="color: #e23d8c; font-size: 20px"
-          ><strong>Endereço de e-mail</strong></label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="inputEmail"
-          placeholder="email@exemplo.com"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputEmail" style="color: #e23d8c; font-size: 20px"
+            ><strong>Endereço de e-mail</strong></label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="email@exemplo.com"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputEstado" style="color: #e23d8c; font-size: 20px"
-          ><strong>Estado</strong></label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="inputEstado"
-          placeholder="Estado"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputEstado" style="color: #e23d8c; font-size: 20px"
+            ><strong>Estado</strong></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputEstado"
+            placeholder="Estado"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputCidade" style="color: #e23d8c; font-size: 20px"
-          ><strong>Cidade</strong></label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="inputCidade"
-          placeholder="Cidade"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputCidade" style="color: #e23d8c; font-size: 20px"
+            ><strong>Cidade</strong></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputCidade"
+            placeholder="Cidade"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputEndereco" style="color: #e23d8c; font-size: 20px"
-          ><strong>Endereço</strong></label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="inputEndereco"
-          placeholder="Endereço"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputEndereco" style="color: #e23d8c; font-size: 20px"
+            ><strong>Endereço</strong></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputEndereco"
+            placeholder="Endereço"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputEspecialidade" style="color: #e23d8c; font-size: 20px"
-          ><strong>Especialidade do seu negócio</strong></label
-        >
-        <input
-          type="text"
-          class="form-control"
-          id="inputEspecialidade"
-          placeholder="Informe uma especialidade"
-        />
-      </div>
+        <div class="form-group">
+          <label
+            for="inputEspecialidade"
+            style="color: #e23d8c; font-size: 20px"
+            ><strong>Especialidade do seu negócio</strong></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputEspecialidade"
+            placeholder="Informe uma especialidade"
+          />
+        </div>
 
-      <div class="form-group">
-        <label for="inputSenha" style="color: #e23d8c; font-size: 20px"
-          ><strong>Senha</strong></label
-        >
-        <input
-          type="password"
-          class="form-control"
-          id="inputSenha"
-          placeholder="Senha"
-        />
-      </div>
+        <div class="form-group">
+          <label for="inputSenha" style="color: #e23d8c; font-size: 20px"
+            ><strong>Senha</strong></label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="inputSenha"
+            placeholder="Senha"
+          />
+        </div>
 
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
-    </form>
-
-    <!--Footer-->
-    <section class="newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="content">
-              <h2>Receba as nossas novidades!</h2>
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Informe o seu endereço de e-mail"
-                />
-                <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+      </form>
+      <!--Newsletter-->
+      <section class="newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content">
+                <h2>Receba as nossas novidades!</h2>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Informe o seu endereço de e-mail"
+                  />
                   <button class="btn" type="submit">Inscreva-se agora</button>
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="imagens/logo_menu.png" height="80" alt="logotipo" />
+        </div>
+        <div class="col">
+          <p>contato@amornapele.com | (21)99876-5432)</p>
+          <p>&COPY;2021 ONG Amor na Pele. Todos os direitos reservados.</p>
+        </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

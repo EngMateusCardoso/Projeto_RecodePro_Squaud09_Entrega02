@@ -11,8 +11,6 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="./style.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,119 +18,132 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/contato.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <header>
-      <!--Menu Navegação-->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Alterna navegação"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cadastrar.html">Cadastro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="parceiros.html">Parceiros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active bg-light" href="contato.html"
-                  >Contato</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="links.html">Links</a>
-              </li>
-            </ul>
-
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="O que você procura?"
-              />
-              <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
-                Buscar
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <header>
-      <h1 class="titleContato">Contato</h1>
-    </header>
-
-    <!--Formulário-->
-    <form class="cardForm">
-      <div class="form-group">
-        <label for="inputNome"><strong>Nome</strong></label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputNome"
-          placeholder="Nome"
-        />
-      </div>
-
-      <div class="form-group">
-        <label for="inputEmail"><strong>Endereço de e-mail</strong></label>
-        <input
-          type="email"
-          class="form-control"
-          id="inputEmail"
-          placeholder="email@exemplo.com"
-        />
-      </div>
-
-      <div class="form-group">
-        <label for="textAreaMensagem"><strong>Mensagem</strong></label>
-        <textarea
-          class="form-control"
-          id="textAreaMensagem"
-          placeholder="Mensagem..."
-          rows="3"
-        ></textarea>
-      </div>
-
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-
-    <section class="newsletter">
+    <!--Menu Navegação-->
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="content">
-              <h2>Receba as nossas novidades!</h2>
-              <div class="input-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Informe o seu endereço de e-mail"
-                />
-                <span class="input-group-btn">
+        <!--Logotipo-->
+        <a class="navbar-brand" href="#"
+          ><img
+            src="imagens/logo_menu.png"
+            alt="Logotipo do projeto Amor na Pele"
+            height="75"
+            class="d-inline-block align-text-top"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastrar.html">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="links.html">Links</a>
+            </li>
+          </ul>
+          <!--Campo de pesquisa
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="O que você procura?"
+            />
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+              Buscar
+            </button>
+          </form>
+        --></div>
+      </div>
+    </nav>
+    <h1 class="titleContato">Contato</h1>
+    <main>
+      <!--Formulário-->
+      <form class="cardForm">
+        <div class="form-group">
+          <label for="inputNome"><strong>Nome</strong></label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputNome"
+            placeholder="Nome"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail"><strong>Endereço de e-mail</strong></label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="email@exemplo.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="textAreaMensagem"><strong>Mensagem</strong></label>
+          <textarea
+            class="form-control"
+            id="textAreaMensagem"
+            placeholder="Mensagem..."
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <!--Newsletter-->
+      <section class="newsletter">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content">
+                <h2>Receba as nossas novidades!</h2>
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Informe o seu endereço de e-mail"
+                  />
                   <button class="btn" type="submit">Inscreva-se agora</button>
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="imagens/logo_menu.png" height="80" alt="logotipo" />
+        </div>
+        <div class="col">
+          <p>contato@amornapele.com | (21)99876-5432)</p>
+          <p>&COPY;2021 ONG Amor na Pele. Todos os direitos reservados.</p>
+        </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

@@ -1,122 +1,38 @@
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    user-select: none;
-  }
-
-body {
-    font-family: "Roboto", sans-serif;
+.titleContato {
+  margin-top: 10px;
+  text-align: center;
+  color: #e23d8c;
+  font-family: "Roboto", sans-serif;
 }
 
-nav {
-    background-color: #5bc4c3;
-  }
-  
-  nav ul li a {
-    font-weight: bold;
-    font-size: 20px;
-    padding: 7px 13px;
-    color: #fff;
-  }
-
-  a.active,
-  a:hover {
-    background: #058177;
-    transition: 0.5s;
-    color: #feaec9 !important;
-  }
-
-  .btn {
-    background-color: #058177;
-    color: #fff;
-  }
-
-  .h-100 {
-    border-radius: 40px 0;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .h-100 h3 {
-    color: #e23d8c;
-  }
-
-  #icon-grid {
-    background-color: #fff0f5;
-    text-align: center;
-  }
-
-.nav-link{
-    display: inline-block;
-    margin-right: 30px;
+.cardForm {
+  margin-top: 70px;
+  margin-right: 160px;
+  margin-left: 160px;
+  margin-bottom: 70px;
+  padding: 15px 40px;
+  background-color: #feaec9;
+  color: #e23d8c;
+  box-shadow: 0 4px 8px rgba(212, 197, 197, 0.897);
 }
 
-.titleContato{
-    margin-top: 10px;
-    text-align: center;
-    color: #e23d8c;
-    font-family:"Roboto", sans-serif;
+#inputNome {
+  margin-bottom: 25px;
+  border: 1px solid #999;
 }
 
-.cardForm{
-    margin-top: 70px;
-    margin-right: 160px;
-    margin-left: 160px;
-    margin-bottom: 70px;
-    padding: 15px 40px;
-    background-color: #feaec9;
-    color: #e23d8c;
-    box-shadow: 0 4px 8px rgba(212, 197, 197, 0.897);
+#inputEmail {
+  margin-bottom: 25px;
+  border: 1px solid #999;
 }
 
-#inputNome{
-    margin-bottom: 25px;
-    border: 1px solid #999;
+#textAreaMensagem {
+  margin-bottom: 25px;
+  border: 1px solid #999;
 }
 
-#inputEmail{
-    margin-bottom: 25px;
-    border: 1px solid #999;
+#inputNome:focus,
+#inputEmail:focus,
+#textAreaMensagem:focus {
+  border-color: #e23d8c;
 }
-
-#textAreaMensagem{
-    margin-bottom: 25px;
-    border: 1px solid #999;
-}
-
-
-#inputNome:focus , #inputEmail:focus , #textAreaMensagem:focus{
-    border-color: #e23d8c;
-}
-
-.newsletter {
-    padding: 20px;
-}
-
-footer {
-    background-color: #058177;
-  
-}
-
-  footer p,
-  footer ul li a {
-    color: #fff;
-  }
-  
-
-@media screen and (max-width: 768px) {
-        form{
-            width: 100%;
-        }
-}
-    
-@media screen and (max-width: 600px) {
-        button{
-            width: 100%;
-        }
-}
-    
