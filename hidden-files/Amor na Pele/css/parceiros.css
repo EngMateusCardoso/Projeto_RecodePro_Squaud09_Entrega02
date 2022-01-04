@@ -1,0 +1,12 @@
+.card {
+  margin: 20px auto 20px auto;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px var(--cinza-claro);
+  background: var(--rosa-claro-transp);
+  border-color: white;
+  width: 2000px;
+}
+
+.imagem {
+  margin: 20px;
+}

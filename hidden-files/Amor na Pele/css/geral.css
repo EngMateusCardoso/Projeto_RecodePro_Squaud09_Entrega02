@@ -1,0 +1,37 @@
+/*Fonte*/
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+:root {
+  --verde-escuro: #058177;
+  --verde-medio: #5bc7a3;
+  --verde-claro: #9ae4c3;
+  --rosa-claro: #feaec9; 
+  --rosa-claro-transp: #feaec973;
+  --rosa-escuro: #e23d8c;
+  --cinza-escuro: #3d3e40;
+  --cinza-claro: #b3afaf;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+.nav-link {
+  color: white;
+  font-size: larger;
+}
+
+#navbarNav {
+  float: right;
+}
