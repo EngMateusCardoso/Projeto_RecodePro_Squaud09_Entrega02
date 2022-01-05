@@ -11,10 +11,8 @@
 
 .card {
   padding: 10px;
-  margin-right: 40px;
-  margin-left: 130px;
   text-align: center;
-  height: 325px;
+  height: auto;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
   background-color: white;
   display: inline-flex;
