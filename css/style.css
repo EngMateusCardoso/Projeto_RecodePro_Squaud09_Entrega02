@@ -45,6 +45,22 @@ a:hover {
   background-color: #fff0f5;
   text-align: center;
 }
+.carousel-item img {
+  width: 100%;
+}
+.carousel-caption p {
+  opacity: 0.8;
+}
+@media (max-width: 960px) {
+  .carousel-caption h1 {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  .carousel-caption {
+    display: none;
+  }
+}
 .newsletter {
   padding: 40px;
   margin-bottom: 30px;
