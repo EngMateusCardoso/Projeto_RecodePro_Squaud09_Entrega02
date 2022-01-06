@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\cadastrar2.cshtml",
+      "TargetPath": "Views\\Home\\cadastrar2.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

@@ -12,13 +12,13 @@ namespace Amor_na_Pele_Squad09_Entrega02.Models
         public Context(DbContextOptions<Context> options) : base(options)
         {
         }
-            public DbSet<CadastroContato> CadastroContato { get; set; }
+            public DbSet<CadastroContato> CadastroContatos { get; set; }
 
-            public DbSet<CadastroEmpresa> CadastroEmpresa { get; set; }
+            public DbSet<CadastroEmpresa> CadastroEmpresas { get; set; }
 
-            public DbSet<CadastroMulher> CadastroMulher { get; set; }
+            public DbSet<CadastroMulher> CadastroMulheres { get; set; }
 
-            public DbSet<CadastroNewsletter> CadastroNewsletter { get; set; }
+            public DbSet<CadastroNewsletter> CadastroNewsletters { get; set; }
 
     }
 }

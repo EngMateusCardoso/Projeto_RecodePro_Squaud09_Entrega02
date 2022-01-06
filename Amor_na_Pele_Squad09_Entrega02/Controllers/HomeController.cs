@@ -11,11 +11,57 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
 {
     public class HomeController : Controller
     {
+        private Context _context;
+
+        public HomeController(Context contexto)
+        {
+            _context = contexto;
+        }
 
         public IActionResult Index()
         {
             return View();
         }
-        
+
+        public IActionResult cadastrar()
+        {
+            return View();
+        }
+
+        public IActionResult parceiros()
+        {
+            return View();
+        }
+
+        public IActionResult contato()
+        {
+            return View();
+        }
+
+        public IActionResult links()
+        {
+            return View();
+        }
+
+        public IActionResult cadastrarEmpresa()
+        {
+            return View();
+        }
+
+        public IActionResult cadastrarPessoa()
+        {
+            return View();
+        }
+
+        //CREATE
+
+        [HttpPost]
+        public IActionResult contato(CadastroContato contato)
+        {
+            _context.Add(contato);
+            _context.SaveChanges();
+            return View("Index");
+        }
+
     }
 }
