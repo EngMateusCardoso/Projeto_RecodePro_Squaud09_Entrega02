@@ -13,10 +13,11 @@ namespace Amor_na_Pele_Squad09_Entrega02.Models
         [Key]
         public int ID_Newsletter { get; set; }
 
-        public int emailNewsletter { get; set; }
+        public String emailNewsletter { get; set; }
 
         public String nomeNewsletter { get; set; }
 
         public Boolean aceitaReceber { get; set; }
     }
 }
+

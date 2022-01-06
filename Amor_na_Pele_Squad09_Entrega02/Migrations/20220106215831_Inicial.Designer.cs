@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Amor_na_Pele_Squad09_Entrega02.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20220106012422_Inicial")]
+    [Migration("20220106215831_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,6 +29,9 @@ namespace Amor_na_Pele_Squad09_Entrega02.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("emailContato")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("msg")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nomeContato")
@@ -112,8 +115,8 @@ namespace Amor_na_Pele_Squad09_Entrega02.Migrations
                     b.Property<bool>("aceitaReceber")
                         .HasColumnType("bit");
 
-                    b.Property<int>("emailNewsletter")
-                        .HasColumnType("int");
+                    b.Property<string>("emailNewsletter")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nomeNewsletter")
                         .HasColumnType("nvarchar(max)");

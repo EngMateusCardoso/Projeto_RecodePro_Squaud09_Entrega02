@@ -1,30 +1,25 @@
-﻿@{
+﻿@model Amor_na_Pele_Squad09_Entrega02.Models.CadastroMulher
+
+@{
     ViewData["Title"] = "Cadastrar Pessoa";
 }
 
 <h1 class="titleCadastrarPessoa">Cadastrar Pessoa</h1>
 
 <!--Formulário-->
-<form class="cardForm">
+<form class="cardForm" asp-action="cadastroMulher" method="post">
     <div class="form-group">
         <label for="inputNome" style="color: #e23d8c; font-size: 20px"><strong>Nome completo</strong></label>
         <input type="text"
                class="form-control"
                id="inputNome"
-               placeholder="Nome" />
-    </div>
-
-    <div class="form-group">
-        <label for="inputCPF" style="color: #e23d8c"><strong>CPF</strong></label>
-        <input type="text"
-               class="form-control"
-               id="inputCPF"
-               placeholder="Informe somente números" />
+               placeholder="Nome"
+               asp-for="nomeMulher"/>
     </div>
 
     <div class="form-group">
         <label for="inputNascimento" style="color: #e23d8c; font-size: 20px"><strong>Data de nascimento</strong></label>
-        <input type="date" class="form-control" id="inputNascimento" />
+        <input type="date" class="form-control" id="inputNascimento" asp-for="dataNascimento">
     </div>
 
     <div class="form-group">
@@ -32,7 +27,8 @@
         <input type="tel"
                class="form-control"
                id="inputTelefone"
-               placeholder="Telefone" />
+               placeholder="Telefone"
+               asp-for="numeroTelefoneMulher"/>
     </div>
 
     <div class="form-group">
@@ -40,15 +36,8 @@
         <input type="email"
                class="form-control"
                id="inputEmail"
-               placeholder="email@exemplo.com" />
-    </div>
-
-    <div class="form-group">
-        <label for="inputSenha" style="color: #e23d8c; font-size: 20px"><strong>Senha</strong></label>
-        <input type="password"
-               class="form-control"
-               id="inputSenha"
-               placeholder="Senha" />
+               placeholder="email@exemplo.com"
+               asp-for="emailMulher"/>
     </div>
 
     <button type="submit" class="btn btn-primary">Cadastrar</button>

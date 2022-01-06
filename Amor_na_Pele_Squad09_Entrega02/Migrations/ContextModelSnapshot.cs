@@ -29,6 +29,9 @@ namespace Amor_na_Pele_Squad09_Entrega02.Migrations
                     b.Property<string>("emailContato")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("msg")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("nomeContato")
                         .HasColumnType("nvarchar(max)");
 
@@ -110,8 +113,8 @@ namespace Amor_na_Pele_Squad09_Entrega02.Migrations
                     b.Property<bool>("aceitaReceber")
                         .HasColumnType("bit");
 
-                    b.Property<int>("emailNewsletter")
-                        .HasColumnType("int");
+                    b.Property<string>("emailNewsletter")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nomeNewsletter")
                         .HasColumnType("nvarchar(max)");

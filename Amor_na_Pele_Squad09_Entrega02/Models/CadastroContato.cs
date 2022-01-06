@@ -17,5 +17,7 @@ namespace Amor_na_Pele_Squad09_Entrega02.Models
 
         public String emailContato { get; set; }
 
+        public String msg { get; set; }
+
     }
 }
