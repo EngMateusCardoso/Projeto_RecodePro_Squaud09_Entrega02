@@ -1,0 +1,45 @@
+.titleCadastrarEmpresa {
+  margin-top: 10px;
+  text-align: center;
+  color: #e23d8c;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 40px;
+}
+
+.cardForm {
+  margin-top: 70px;
+  margin-right: 160px;
+  margin-left: 160px;
+  margin-bottom: 70px;
+  padding: 15px 40px;
+  background-color: #feaec9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(212, 197, 197, 0.897);
+}
+
+#inputNome,
+#inputCNPJ,
+#inputRazaoSocial,
+#inputTelefone,
+#inputEmail,
+#inputEstado,
+#inputCidade,
+#inputEndereco,
+#inputEspecialidade,
+#inputSenha {
+  margin-bottom: 25px;
+  border: 1px solid #999;
+}
+
+#inputNome:focus,
+#inputCNPJ:focus,
+#inputRazaoSocial:focus,
+#inputTelefone:focus,
+#inputEmail:focus,
+#inputEstado:focus,
+#inputCidade:focus,
+#inputEndereco:focus,
+#inputEspecialidade:focus,
+#inputSenha:focus {
+  border-color: #e23d8c;
+}

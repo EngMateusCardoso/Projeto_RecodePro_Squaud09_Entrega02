@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar Pessoa";
+}
+
+<h1 class="titleCadastrarPessoa">Cadastrar Pessoa</h1>
+
+<!--Formulário-->
+<form class="cardForm">
+    <div class="form-group">
+        <label for="inputNome" style="color: #e23d8c; font-size: 20px"><strong>Nome completo</strong></label>
+        <input type="text"
+               class="form-control"
+               id="inputNome"
+               placeholder="Nome" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputCPF" style="color: #e23d8c"><strong>CPF</strong></label>
+        <input type="text"
+               class="form-control"
+               id="inputCPF"
+               placeholder="Informe somente números" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputNascimento" style="color: #e23d8c; font-size: 20px"><strong>Data de nascimento</strong></label>
+        <input type="date" class="form-control" id="inputNascimento" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputTelefone" style="color: #e23d8c; font-size: 20px"><strong>Telefone</strong></label>
+        <input type="tel"
+               class="form-control"
+               id="inputTelefone"
+               placeholder="Telefone" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputEmail" style="color: #e23d8c; font-size: 20px"><strong>Endereço de e-mail</strong></label>
+        <input type="email"
+               class="form-control"
+               id="inputEmail"
+               placeholder="email@exemplo.com" />
+    </div>
+
+    <div class="form-group">
+        <label for="inputSenha" style="color: #e23d8c; font-size: 20px"><strong>Senha</strong></label>
+        <input type="password"
+               class="form-control"
+               id="inputSenha"
+               placeholder="Senha" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+</form>

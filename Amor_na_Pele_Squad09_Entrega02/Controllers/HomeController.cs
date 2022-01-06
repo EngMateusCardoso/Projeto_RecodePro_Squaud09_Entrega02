@@ -11,11 +11,11 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private Context _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(Context contexto)
         {
-            _logger = logger;
+            _context = contexto;
         }
 
         public IActionResult Index()
@@ -23,15 +23,45 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult cadastrar()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult parceiros()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
+
+        public IActionResult contato()
+        {
+            return View();
+        }
+
+        public IActionResult links()
+        {
+            return View();
+        }
+
+        public IActionResult cadastrarEmpresa()
+        {
+            return View();
+        }
+
+        public IActionResult cadastrarPessoa()
+        {
+            return View();
+        }
+
+        //CREATE
+
+        [HttpPost]
+        public IActionResult contato(CadastroContato contato)
+        {
+            _context.Add(contato);
+            _context.SaveChanges();
+            return View("Index");
+        }
+
     }
 }
