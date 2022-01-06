@@ -14,7 +14,8 @@ namespace Amor_na_Pele_Squad09_Entrega02.Migrations
                     ID_Contato = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nomeContato = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    emailContato = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    emailContato = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    msg = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -64,7 +65,7 @@ namespace Amor_na_Pele_Squad09_Entrega02.Migrations
                 {
                     ID_Newsletter = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    emailNewsletter = table.Column<int>(type: "int", nullable: false),
+                    emailNewsletter = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     nomeNewsletter = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     aceitaReceber = table.Column<bool>(type: "bit", nullable: false)
                 },

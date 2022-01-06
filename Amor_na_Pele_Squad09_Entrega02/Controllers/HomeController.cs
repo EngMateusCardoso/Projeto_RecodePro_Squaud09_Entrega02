@@ -55,6 +55,7 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
 
         //CREATE
 
+        //contato
         [HttpPost]
         public IActionResult contato(CadastroContato contato)
         {
@@ -63,5 +64,31 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
             return View("Index");
         }
 
+        //Cadastro da mulher
+        [HttpPost]
+        public IActionResult cadastroMulher(CadastroMulher cadastroMulher)
+        {
+            _context.Add(cadastroMulher);
+            _context.SaveChanges();
+            return View("cadastrar");
+        }
+
+        //Cadastro Empresa
+        [HttpPost]
+        public IActionResult cadastroEmpresa(CadastroEmpresa cadastroEmpresa)
+        {
+            _context.Add(cadastroEmpresa);
+            _context.SaveChanges();
+            return View("cadastrar");
+        }
+
+        //Cadastro Newsletter
+        [HttpPost]
+        public IActionResult cadastroNewsletter(CadastroNewsletter cadastroNewsletter)
+        {
+            _context.Add(cadastroNewsletter);
+            _context.SaveChanges();
+            return View("Index");
+        }
     }
 }
