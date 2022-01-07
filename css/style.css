@@ -10,13 +10,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /*Menu navegação*/
-nav {
+.navbar {
   background-color: #058177;
 }
-nav ul li a {
+.navbar ul li a {
   font-size: larger;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   padding: 7px 13px;
-  color: #fff !important;
 }
 a.active,
 a:hover {
@@ -24,12 +25,7 @@ a:hover {
   color: #feaec9 !important;
 }
 .btn {
-  background-color: #058177;
-  color: #fff;
-}
-.btn:hover {
-  background-color: #feaec9;
-  color: #fff !important;
+  background-color: #058177 !important;
   border: none;
 }
 .h-100 {
