@@ -28,6 +28,10 @@ a:hover {
   background-color: #058177 !important;
   border: none;
 }
+/*Cards institucionais*/
+#institucional {
+  padding: 60px;
+}
 .h-100 {
   border-radius: 40px 0;
   text-align: center;
