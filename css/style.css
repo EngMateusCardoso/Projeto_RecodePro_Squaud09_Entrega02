@@ -93,6 +93,10 @@ footer ul li a {
   padding: 10px;
   text-align: center;
 }
+.tituloform{
+ color: #058177;
+ margin-top: 35px;
+}
 /*Páginas Cadastrar Empresa, Cadastrar Pessoa e Contato*/
 .titleCadastrarEmpresa,
 .titleCadastrarPessoa,
@@ -113,6 +117,31 @@ footer ul li a {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(212, 197, 197, 0.897);
 }
+.cont{
+max-width: 500px;
+  margin: 0 auto;
+}
+.table{
+ background-color:#fae9ee ;
+ }
+ td,th {
+   color: #e23d8c;
+   font-size: 20px;
+  
+ }
+ .titulotabela{
+   font-size: 30px;
+
+ }
+ .bgtabela{
+   background-color: #fae9ee;
+ }
+ .btn:hover {
+  transition: 0.5s;
+  color: #feaec9 !important;
+}
+
+
 /*Página Cadastrar Empresa*/
 #inputNome,
 #inputCNPJ,
