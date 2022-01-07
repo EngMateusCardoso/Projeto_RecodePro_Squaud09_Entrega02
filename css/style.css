@@ -150,6 +150,9 @@ footer ul li a {
 .cardParceiros {
   padding: 40px;
 }
+.card-ind-parc {
+  padding: 20px;
+}
 .card-header {
   padding-top: 30px;
   font-weight: bold;
