@@ -15619,13 +15619,18 @@
   "RootNamespace": "Amor_na_Pele_Squad09_Entrega02",
   "Documents": [
     {
+      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\CadastrarPessoa.cshtml",
+      "TargetPath": "Views\\Home\\CadastrarPessoa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\cadastrar2.cshtml",
-      "TargetPath": "Views\\Home\\cadastrar2.cshtml",
+      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\CadastrarEmpresa.cshtml",
+      "TargetPath": "Views\\Home\\CadastrarEmpresa.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15644,13 +15649,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\cadastrar.cshtml",
+      "TargetPath": "Views\\Home\\cadastrar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\parceiros.cshtml",
+      "TargetPath": "Views\\Home\\parceiros.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\contato.cshtml",
+      "TargetPath": "Views\\Home\\contato.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Users\\Eng. Mateus Cardodo\\Documents\\Projetos Git\\Projeto Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\Views\\Home\\links.cshtml",
+      "TargetPath": "Views\\Home\\links.cshtml",
       "FileKind": "mvc"
     }
   ],

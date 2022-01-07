@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Amor_na_Pele_Squad09_Entrega02.Models
 {
-    [Table("CadastroNewsletter")]
+        
     public class CadastroNewsletter
     {
         [Key]
