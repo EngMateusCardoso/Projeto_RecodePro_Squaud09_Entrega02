@@ -28,6 +28,38 @@ a:hover {
   background-color: #058177 !important;
   border: none;
 }
+.newsletter {
+  padding: 40px;
+  margin-bottom: 30px;
+}
+footer {
+  background-color: #058177;
+  padding: 20px;
+}
+footer p,
+footer ul li a {
+  color: #fff;
+  text-align: center;
+}
+
+/*Página Home*/
+/*Carroseel*/
+.carousel-item img {
+  width: 100%;
+}
+.carousel-caption h4 {
+  opacity: 0.8;
+}
+@media (max-width: 960px) {
+  .carousel-caption h1 {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  .carousel-caption {
+    display: none;
+  }
+}
 /*Cards institucionais*/
 #institucional {
   padding: 60px;
@@ -46,35 +78,7 @@ a:hover {
   background-color: #fff0f5;
   text-align: center;
 }
-.carousel-item img {
-  width: 100%;
-}
-.carousel-caption h4 {
-  opacity: 0.8;
-}
-@media (max-width: 960px) {
-  .carousel-caption h1 {
-    display: none;
-  }
-}
-@media (max-width: 740px) {
-  .carousel-caption {
-    display: none;
-  }
-}
-.newsletter {
-  padding: 40px;
-  margin-bottom: 30px;
-}
-footer {
-  background-color: #058177;
-  padding: 20px;
-}
-footer p,
-footer ul li a {
-  color: #fff;
-  text-align: center;
-}
+
 /*Página Cadastro*/
 .card-title {
   color: white;
@@ -88,10 +92,6 @@ footer ul li a {
 .card {
   padding: 10px;
   text-align: center;
-  height: auto;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
-  background-color: white;
-  display: inline-flex;
 }
 /*Páginas Cadastrar Empresa, Cadastrar Pessoa e Contato*/
 .titleCadastrarEmpresa,
@@ -148,40 +148,16 @@ footer ul li a {
 }
 /*Página parceiros*/
 .cardParceiros {
-  padding-top: 40px;
-}
-.headerParceiros img {
-  width: 100%;
-  height: auto;
-}
-.headerParceiros h1 {
-  margin-top: -180px;
-  text-align: center;
-  color: white;
-}
-@media (max-width: 680px) {
-  .headerParceiros h1 {
-    display: none;
-  }
-}
-.headerParceiros p {
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-.cardParceiro1,
-.cardParceiro2 {
-  margin-bottom: 40px;
-  margin-right: 160px;
-  margin-left: 160px;
-  background: white;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  padding: 40px;
 }
 .card-header {
+  padding-top: 30px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   color: #058177;
   background-color: #baf0ee;
+}
+.card-text1 {
+  text-align: justify;
 }
