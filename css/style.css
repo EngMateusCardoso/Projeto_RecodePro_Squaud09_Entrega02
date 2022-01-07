@@ -103,17 +103,18 @@ footer ul li a {
   color: #e23d8c;
   margin-bottom: 40px;
 }
+label {
+  color: #e23d8c;
+  font-weight: bolder;
+}
 .cardForm {
-  margin-top: 70px;
-  margin-right: 160px;
-  margin-left: 160px;
-  margin-bottom: 70px;
+  margin-right: 2vw;
+  margin-left: 2vw;
   padding: 15px 40px;
   background-color: #fae9ee;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(212, 197, 197, 0.897);
 }
-/*Página Cadastrar Empresa*/
 #inputNome,
 #inputCNPJ,
 #inputRazaoSocial,
@@ -146,9 +147,19 @@ footer ul li a {
 #textAreaMensagem:focus {
   border-color: #e23d8c;
 }
+#img-form img {
+  width: 100%;
+  padding: 15px;
+}
+.container {
+  padding-bottom: 30px;
+}
 /*Página parceiros*/
 .cardParceiros {
   padding: 40px;
+}
+.card-ind-parc {
+  padding: 20px;
 }
 .card-header {
   padding-top: 30px;
