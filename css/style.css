@@ -45,7 +45,7 @@ a:hover {
 .carousel-item img {
   width: 100%;
 }
-.carousel-caption p {
+.carousel-caption h4 {
   opacity: 0.8;
 }
 @media (max-width: 960px) {
