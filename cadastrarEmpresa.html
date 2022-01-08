@@ -122,12 +122,161 @@
             </tbody>
           </table>
           <div >
-            <button class="btn btn-dark">Editar</button>
+            <a
+                    class="btn btn-dark"
+                    data-bs-toggle="collapse"
+                    href="#collapseFormEmpresa"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseEmpresa"
+                    >Editar</a
+                  >
             <button class="btn btn-dark">Deletar</button>
           </div>
         </div>
   
       </div>
+      <!--Formulário editar  Empresa -->
+      <div class="row">
+        <div class="collapse" id="collapseFormEmpresa">
+          <div class="card mb-4 shadow-sm">
+            <div class="tituloform">
+              <h2>Edite os dados da empresa</h2>
+            </div>
+            <form class="cardForm" action="cadastrarEmpresa.html">
+              <div class="form-group">
+                <label
+                  for="inputNome"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Nome completo</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputNome"
+                  placeholder="Nome"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputCNPJ"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>CNPJ</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCNPJ"
+                  placeholder="CNPJ"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputRazaoSocial"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Razão Social</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputRazaoSocial"
+                  placeholder="Razão social"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputTelefone"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Telefone</strong></label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="inputTelefone"
+                  placeholder="Telefone"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputEmail"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Endereço de e-mail</strong></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="email@exemplo.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputEstado"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Estado</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEstado"
+                  placeholder="Estado"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputCidade"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Cidade</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCidade"
+                  placeholder="Cidade"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputEndereco"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Endereço</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEndereco"
+                  placeholder="Endereço"
+                />
+              </div>
+
+              <div class="form-group">
+                <label
+                  for="inputEspecialidade"
+                  style="color: #e23d8c; font-size: 20px"
+                  ><strong>Especialidade do seu negócio</strong></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEspecialidade"
+                  placeholder="Informe uma especialidade"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-dark">Confimar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
       <!--Newsletter-->
       <section class="newsletter">
         <div class="container">
