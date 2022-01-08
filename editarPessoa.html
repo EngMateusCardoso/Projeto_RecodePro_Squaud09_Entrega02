@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amor na Pele - Cadastrar Empresa</title>
+  <title>Amor na Pele - Editar Pessoa</title>
   <link rel="stylesheet" href="css/style.css" />
   <!--Fonte Roboto e Poppins-->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,66 +51,45 @@
     </div>
   </nav>
   <!--Fim do Menu de navegação-->
+  <h1 class="titleCadastrarPessoa">Edite seus dados</h1>
   <main>
-    <h1 class="titleCadastrarEmpresa">Seu cadastro</h1>
-    <!--Formulário-->
-    <div class="bgtabela">
-      <div class="cont">
-        <table class="table">
+    <!--Tabela-->
+   
+    </div>
+    <!-- form editar pessoa-->
+    <div class="row">
+      <div >
 
-          <tbody>
-            <tr>
-              <th scope="row">Nome Completo</th>
-              <td>nome</td>
+        <div class="card mb-4 shadow-sm">
+        
+          <form class="cardForm" action="cadastrarPessoa.html">
+            <div class="form-group">
+              <label for="inputNome" style="color: #e23d8c; font-size: 20px"><strong>Nome completo</strong></label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome" />
+            </div>
 
-            </tr>
-            <tr>
-              <th scope="row">CNPJ</th>
-              <td>999999999999</td>
+            <div class="form-group">
+              <label for="inputNascimento" style="color: #e23d8c; font-size: 20px"><strong>Data de
+                  nascimento</strong></label>
+              <input type="date" class="form-control" id="inputNascimento" />
+            </div>
 
-            </tr>
-            <tr>
-              <th scope="row">Razão social</th>
-              <td>........</td>
+            <div class="form-group">
+              <label for="inputTelefone" style="color: #e23d8c; font-size: 20px"><strong>Telefone</strong></label>
+              <input type="tel" class="form-control" id="inputTelefone" placeholder="Telefone" />
+            </div>
 
-            </tr>
-            <tr>
-              <th scope="row">Telefone</th>
-              <td>(xx)xxxx - xxxx</td>
-            </tr>
-            <tr>
-              <th scope="row">Endereço de e-mail</th>
-              <td>Email@mail.com</td>
-            </tr>
-            <tr>
-              <th scope="row">Estado</th>
-              <td>Rio de Janeiro</td>
-            </tr>
-            <tr>
-              <th scope="row">Cidade</th>
-              <td>Rio</td>
-            </tr>
-            <tr>
-              <th scope="row">Endereço</th>
-              <td>Endereço aqui.</td>
-            </tr>
-            <tr>
-              <th scope="row">Especialidade do negócio</th>
-              <td>Cirurgias plásticas</td>
-            </tr>
+            <div class="form-group">
+              <label for="inputEmail" style="color: #e23d8c; font-size: 20px"><strong>Endereço de
+                  e-mail</strong></label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="email@exemplo.com" />
+            </div>
 
-
-          </tbody>
-        </table>
-        <div>
-          <a class="btn btn-dark" href="index.html">Confirmar</a>
-          <a class="btn btn-dark" href="editarEmpresa.html" >Editar</a>
-          <button class="btn btn-dark">Deletar</button>
+            <button type="submit" class="btn btn-dark">Confirmar</button>
+          </form>
         </div>
       </div>
-
     </div>
-
     <!--Newsletter-->
     <section class="newsletter">
       <div class="container">
