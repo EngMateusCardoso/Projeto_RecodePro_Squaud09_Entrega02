@@ -1,0 +1,61 @@
+﻿@model Amor_na_Pele_Squad09_Entrega02.Models.CadastroMulher
+
+@{
+    ViewData["Title"] = "Cadastrar Pessoa";
+}
+
+<!--Tabela-->
+<div class="container bgtabela">
+    <div class="cont">
+        <table class="table">
+
+            <tbody>
+                <tr>
+                    <th scope="row">Nome Completo</th>
+                    <td>nome</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Data de nascimento</th>
+                    <td>01/02/1990</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Telefone</th>
+                    <td>(21)956987845</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">Endereço de e-mail</th>
+                    <td>endereço</td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <a class="btn btn-dark" href="index.html" role="button"
+               aria-expanded="false">Confirmar</a>
+            <a class="btn btn-dark" role="button"
+               aria-expanded="false" asp-action="editarMulher">Editar</a>
+            <button class="btn btn-dark">Deletar</button>
+        </div>
+    </div>
+
+</div>
+
+
+<!--Newsletter-->
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="content">
+                    <h2>Receba as nossas novidades!</h2>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Informe o seu endereço de e-mail" />
+                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

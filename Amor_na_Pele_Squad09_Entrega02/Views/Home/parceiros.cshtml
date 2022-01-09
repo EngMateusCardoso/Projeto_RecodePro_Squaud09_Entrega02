@@ -2,42 +2,129 @@
     ViewData["Title"] = "Parceiros";
 }
 
-<header class="headerParceiros">
-    <br />
-    <img class="card-img-top"
-         src="~/imagens/parceiros.jpg"
-         alt="Banner Parceiros"
-         height="450px" />
-    <h1 class="titleParceiros">Nossos Parceiros</h1>
-    <p>Venha conosco nesta jornada em busca da felicidade!</p>
-</header>
-
-<div class="cardParceiros">
-    <div class="cardParceiro1">
-        <div class="card-header">Nome do parceiro 1</div>
-        <div class="card-body">
-            <h5 class="card-title">Especialidade da empresa:</h5>
-            <p class="card-text1">Endereço:</p>
-            <p class="card-text2">Telefone:</p>
-            <p class="card-text3">E-mail:</p>
-            <p class="card-text4">
-                Para mais informações, acesse o site abaixo:
-            </p>
-            <a href="#" class="btn btn-primary">link do site do parceiro</a>
-        </div>
-    </div>
-
-    <div class="cardParceiro2">
-        <div class="card-header">Nome do parceiro 2</div>
-        <div class="card-body">
-            <h5 class="card-title">Especialidade da empresa:</h5>
-            <p class="card-text1">Endereço:</p>
-            <p class="card-text2">Telefone:</p>
-            <p class="card-text3">E-mail:</p>
-            <p class="card-text4">
-                Para mais informações, acesse o site abaixo:
-            </p>
-            <a href="#" class="btn btn-primary">link do site do parceiro</a>
+<!--Banner principal-->
+<div class="px-1 pt-1 my-1 text-center">
+    <div class="card text-white">
+        <img src="~/imagens/parceiros.png"
+             class="card-img"
+             alt="imagem de mãos sobrepostas" />
+        <div class="card-img-overlay">
+            <h1 class="display-4 fw-bold">Nossos Parceiros</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">
+                    Venha conosco nesta jornada em busca da felicidade!
+                </p>
+            </div>
         </div>
     </div>
 </div>
+<!--Fim do banner principal-->
+<!--Início dos cards dos parceiros-->
+<div class="cardParceiros">
+    <!--Parceiro 1-->
+    <div class="card-ind-parc">
+        <div class="card border-light shadow-sm h-md-250 mb-12">
+            <div class="card-header">Nome do parceiro 1</div>
+            <div class="row mb-12">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text1">
+                            Especialidade do profissional/empresa <br />
+                            Endereço do parceiro <br />
+                            Dados de contato <br />
+                            Para mais informações, acesse o site abaixo:
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="~/imagens/logotipo.png"
+                         class="img-fluid rounded-start"
+                         alt="logotipo do parceiro"
+                         width="150" />
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a href="#" class="btn btn-outline-success bg-light">Acessar</a>
+            </div>
+        </div>
+        <!--Fim do Parceiro 1-->
+
+        <!--Parceiro 2-->
+        <div class="card-ind-parc">
+            <div class="card border-light shadow-sm h-md-250 mb-12">
+                <div class="card-header">Nome do parceiro 2</div>
+                <div class="row mb-12">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text1">
+                                Especialidade do profissional/empresa <br />
+                                Endereço do parceiro <br />
+                                Dados de contato <br />
+                                Para mais informações, acesse o site abaixo:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="~/imagens/logotipo.png"
+                             class="img-fluid rounded-start"
+                             alt="logotipo do parceiro"
+                             width="150" />
+                    </div>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="#" class="btn btn-outline-success bg-light">Acessar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim do Parceiro 2-->
+
+    <!--Início Parceiro 3-->
+    <div class="card-ind-parc">
+        <div class="card border-light shadow-sm h-md-250 mb-12">
+            <div class="card-header">Nome do parceiro 3</div>
+            <div class="row mb-12">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <p class="card-text1">
+                            Especialidade do profissional/empresa <br />
+                            Endereço do parceiro <br />
+                            Dados de contato <br />
+                            Para mais informações, acesse o site abaixo:
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="~/imagens/logotipo.png"
+                         class="img-fluid rounded-start"
+                         alt="logotipo do parceiro"
+                         width="150" />
+                </div>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a href="#" class="btn btn-outline-success bg-light">Acessar</a>
+            </div>
+        </div>
+    </div>
+    <!--Fim do Parceiro 3-->
+</div>
+<!--Fim dos cards dos parceiros-->
+
+<!--Newsletter-->
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="content">
+                    <h2>Receba as nossas novidades!</h2>
+                    <div class="input-group">
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Informe o seu endereço de e-mail" />
+                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

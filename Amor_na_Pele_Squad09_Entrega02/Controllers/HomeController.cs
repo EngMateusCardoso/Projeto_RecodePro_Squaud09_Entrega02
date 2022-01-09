@@ -43,16 +43,26 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
             return View();
         }
 
-        public IActionResult cadastrarEmpresa()
+        public IActionResult confirmarEmpresa()
         {
             return View();
         }
 
-        public IActionResult cadastrarPessoa()
+        public IActionResult confirmarMulher()
         {
             return View();
         }
 
+        public IActionResult editarMulher()
+        {
+            return View();
+        }
+
+        public IActionResult editarEmpresa()
+        {
+            return View();
+        }
+        /*
         //CREATE
 
         //contato
@@ -89,6 +99,6 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
             _context.Add(cadastroNewsletter);
             _context.SaveChanges();
             return View("Index");
-        }
+        }*/
     }
 }

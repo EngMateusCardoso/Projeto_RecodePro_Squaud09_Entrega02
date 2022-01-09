@@ -2,76 +2,115 @@
     ViewData["Title"] = "Links";
 }
 
-<span class="my-links-ongs"> <!-- Pq é um span aqui sugiro colocar uma section-->
-    <br />
-    <p></p>
-    <br />
-    <p></p>
-    <div class="container marketing">
+<!--Cards de Cadastro-->
+<div class="album py-5 bg-light">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <img class="rounded-circle"
-                     src="~/imagens/em-boas-maos-ong.jpg"
-                     alt="ONG Em Boas Mãos"
-                     width="260"
-                     height="260" />
-                <p></p>
-                <h2>Em Boas Mãos</h2>
-                <p>
-                    Buscamos através de um trabalho criterioso e avaliado caso a
-                    caso, devolver a autoestima perdida ao longo da vida, e assim
-                    transformar o destino e as oportunidades de milhares de pessoas.
-                </p>
-                <p>
-                    <a class="btn btn-secondary"
-                       href="https://emboasmaos.org/"
-                       role="button">Para mais detalhes »</a>
-                </p>
+            <div class="col-md-6">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                         src="~/imagens/emboasmaos.png"
+                         alt="ONG Em Boas Mãos"
+                         width="200" />
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h2>Em Boas Mãos</h2>
+                        <p>
+                            Buscamos através de um trabalho criterioso e avaliado caso a
+                            caso, devolver a autoestima perdida ao longo da vida, e
+                            assim transformar o destino e as oportunidades de milhares
+                            de pessoas.
+                        </p>
+                        <a class="btn btn-dark"
+                           href="https://emboasmaos.org/"
+                           role="button"
+                           target="_blank">Mais detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                         src="~/imagens/socialcare.png"
+                         alt="ONG Social care" />
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h2>Social Care</h2>
+                        <p>
+                            O Projeto da ONG SOCIAL CARE é oferecer o acesso as pessoas
+                            menos favorecidas e que, no entanto, possuem as mesmas
+                            necessidades e desejos de outras socialmente mais
+                            privilegiadas.
+                        </p>
+                        <a class="btn btn-dark"
+                           href="https://www.socialcare.com.br/#firstPage"
+                           role="button"
+                           target="_blank">Mais detalhes»</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                         src="~/imagens/falamulher.png"
+                         alt="ONG Fala Mulher" />
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h2>Fala Mulher</h2>
+                        <p>
+                            Empoderando mulheres e fortalecendo famílias. Somos uma
+                            Organização sem fins lucrativos, que atua no enfrentamento à
+                            violência doméstica contra a mulher.
+                        </p>
+                        <a class="btn btn-dark"
+                           href="https://www.falamulher.ong.br/"
+                           role="button"
+                           target="_blank">Mais detalhes »</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top"
+                         src="~/imagens/amigasdopeito.png"
+                         alt="ONG Amigas do Peito" />
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <h2>Amigas do Peito</h2>
+                        <p>
+                            Surgida do sonho de Márcia Brasil, a ONG oferece
+                            gratuitamente a pigmentação de redesenho em Aréolas
+                            Mamárias, buscando resgatar a autoestima de mulheres que
+                            passaram por mastectomia.
+                        </p>
+                        <a class="btn btn-dark"
+                           href="https://amigasdopeitors.com.br/"
+                           role="button"
+                           target="_blank">Mais detalhes »</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-        <img class="rounded-circle"
-             src="~/imagens/social-care-ong.jpg"
-             alt="ONG Social care"
-             width="260"
-             height="260" />
-        <p></p>
-        <h2>Social Care</h2>
-        <p>
-            O Projeto da ONG SOCIAL CARE é oferecer o acesso as pessoas
-            menos favorecidas e que, no entanto, possuem as mesmas
-            necessidades e desejos de outras socialmente mais privilegiadas.
-        </p>
-        <p>
-            <a class="btn btn-secondary"
-               href="https://www.socialcare.com.br/#firstPage"
-               role="button">Para mais detalhes »</a>
-        </p>
+</div>
+<!--Newsletter-->
+<section class="newsletter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="content">
+                    <h2>Receba as nossas novidades!</h2>
+                    <div class="input-group">
+                        <input type="email"
+                               class="form-control"
+                               placeholder="Informe o seu endereço de e-mail" />
+                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-        <img class="rounded-circle"
-             src="~/imagens/fala-mulher-ong.JPG"
-             alt="ONG Fala Mulher"
-             width="260"
-             height="260" />
-        <p></p><!-- Pq isso ?-->
-        <h2>Fala Mulher</h2>
-        <p>
-            Empoderando mulheres e fortalecendo famílias. Somos uma
-            Organização sem fins lucrativos, que atua no enfrentamento à
-            violência doméstica contra a mulher.
-        </p>
-        <p>
-            <a class="btn btn-secondary"
-               href="https://www.falamulher.ong.br/"
-               role="button">Para mais detalhes »</a>
-        </p>
-    </div>
-    <!-- /.col-lg-4 -->
-
-    <!-- /.row -->
-
-</span>
+</section>

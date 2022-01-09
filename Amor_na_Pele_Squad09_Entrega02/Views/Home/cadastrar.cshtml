@@ -3,35 +3,212 @@
     ViewData["Title"] = "Cadastrar";
 }
 
-<!--Cards de Cadastro-->
-<div class="album py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top"
-                         src="~/imagens/card-cadastro-pessoa.jpg"
-                         alt="Card Cadastrar Pessoa" />
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">Cadastrar Pessoa</p>
-                        <a asp-action="CadastrarPessoa" class="btn">Cadastrar</a>
+<main>
+    <!--Cards de Cadastro-->
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!--Primeiro Card-->
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top"
+                             src="~/imagens/card-cadastro-pessoa.jpg"
+                             alt="Card Cadastrar Mulher" />
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Cadastrar Mulher</p>
+                            <a class="btn btn-dark"
+                               data-bs-toggle="collapse"
+                               href="#collapseFormMulher"
+                               role="button"
+                               aria-expanded="false"
+                               aria-controls="collapseExample">Cadastrar</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Segundo Card-->
+                <div class="col-md-6">
+                    <div class="card mb-4 shadow-sm">
+                        <img class="card-img-top"
+                             src="~/imagens/card-cadastro-empresa.jpg"
+                             alt="Card Cadastrar Empresa" />
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Cadastrar Empresa</p>
+                            <a class="btn btn-dark"
+                               data-bs-toggle="collapse"
+                               href="#collapseFormEmpresa"
+                               role="button"
+                               aria-expanded="false"
+                               aria-controls="collapseEmpresa">Cadastrar</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top"
-                         src="~/imagens/card-cadastro-empresa.jpg"
-                         alt="Card Cadastrar Empresa" />
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text">Cadastrar Empresa</p>
-                        <a asp-action="CadastrarEmpresa" class="btn">Cadastrar</a>
+            <!--Formulário Mulher-->
+            <div class="row">
+                <div class="collapse" id="collapseFormMulher">
+
+                    <div class="card mb-4 shadow-sm">
+                        <div class="tituloform ">
+                            <h2>Cadastro pessoa</h2>
+                        </div>
+                        <form class="cardForm" action="confirmarPessoa.html">
+                            <div class="form-group">
+                                <label for="inputNome"
+                                       style="color: #e23d8c; font-size: 20px">Nome completo:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputNome"
+                                       placeholder="Nome" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputNascimento"
+                                       style="color: #e23d8c; font-size: 20px">Data de nascimento:</label>
+                                <input type="date"
+                                       class="form-control"
+                                       id="inputNascimento" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputTelefone"
+                                       style="color: #e23d8c; font-size: 20px">Telefone:</label>
+                                <input type="tel"
+                                       class="form-control"
+                                       id="inputTelefone"
+                                       placeholder="Telefone" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail"
+                                       style="color: #e23d8c; font-size: 20px">Endereço de e-mail:</label>
+                                <input type="email"
+                                       class="form-control"
+                                       id="inputEmail"
+                                       placeholder="email@exemplo.com" />
+                            </div>
+
+                            <button type="submit" class="btn btn-dark" asp-action="confirmarEmpresa">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--Formulário  Empresa -->
+            <div class="row">
+                <div class="collapse" id="collapseFormEmpresa">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="tituloform">
+                            <h2>Cadastro empresa</h2>
+                        </div>
+                        <form class="cardForm" action="confirmarEmpresa.html">
+                            <div class="form-group">
+                                <label for="inputNome"
+                                       style="color: #e23d8c; font-size: 20px">Nome do contato:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputNome"
+                                       placeholder="Nome" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputCNPJ"
+                                       style="color: #e23d8c; font-size: 20px">CNPJ:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputCNPJ"
+                                       placeholder="CNPJ" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputRazaoSocial"
+                                       style="color: #e23d8c; font-size: 20px">Razão Social:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputRazaoSocial"
+                                       placeholder="Razão social" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputTelefone"
+                                       style="color: #e23d8c; font-size: 20px">Telefone:</label>
+                                <input type="tel"
+                                       class="form-control"
+                                       id="inputTelefone"
+                                       placeholder="Telefone" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEmail"
+                                       style="color: #e23d8c; font-size: 20px">Endereço de e-mail:</label>
+                                <input type="email"
+                                       class="form-control"
+                                       id="inputEmail"
+                                       placeholder="email@exemplo.com" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEstado"
+                                       style="color: #e23d8c; font-size: 20px">Estado:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputEstado"
+                                       placeholder="Estado" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputCidade"
+                                       style="color: #e23d8c; font-size: 20px">Cidade:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputCidade"
+                                       placeholder="Cidade" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEndereco"
+                                       style="color: #e23d8c; font-size: 20px">Endereço:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputEndereco"
+                                       placeholder="Endereço" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputEspecialidade"
+                                       style="color: #e23d8c; font-size: 20px">Especialidade do seu negócio:</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="inputEspecialidade"
+                                       placeholder="Informe a especialidade do serviço a ser oferecido" />
+                            </div>
+
+                            <button type="submit" class="btn btn-dark" asp-action="confirmarEmpresa">Cadastrar</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!--Newsletter-->
+    <section class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2>Receba as nossas novidades!</h2>
+                        <div class="input-group">
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Informe o seu endereço de e-mail" />
+                            <a href="#" class="btn btn-dark">Inscreva-se agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
