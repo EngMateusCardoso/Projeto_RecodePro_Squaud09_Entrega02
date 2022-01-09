@@ -1,142 +1,178 @@
-﻿@{
+﻿@model Amor_na_Pele_Squad09_Entrega02.Models.CadastroNewsletter
+
+@{
     ViewData["Title"] = "Home";
 }
 
 <!--Carrossel -->
+<div id="carouselExampleFade"
+     class="carousel slide carousel-fade"
+     data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/imagens/banner-principal.png"
+                 class="d-block w-100"
+                 alt="imagem mulheres com flores" />
+            <div class="carousel-caption d-none d-md-block">
+                <h1>ONG Amor na Pele</h1>
+                <h4>
+                    Resgatando a autoestima e a alegria perdida, e transformando a
+                    vida e o destino de milhares de mulheres.
+                </h4>
+                <p><a class="btn btn-dark" asp-action="cadastrar">Cadastre-se!</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/imagens/banner-principal2.png"
+                 class="d-block w-100"
+                 alt="imagem mulher com flor" />
+            <div class="carousel-caption text-end">
+                <h1>ONG Amor na Pele</h1>
+                <h4>
+                    Resgatando a autoestima e a alegria perdida, e transformando a
+                    vida e o destino de milhares de mulheres.
+                </h4>
+                <p><a class="btn btn-dark" asp-action="cadastrar">Cadastrar</a></p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
     </ol>
-
-    <div class="carousel-inner">
-
-        <!--
-          Texto e botâo na esquerda
-          <div class="carousel-item">
-            <img class="first-slide" src="imagens/banner-principal.png" alt="imagem mulheres com flores">
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>ONG Amor na Pele</h1>
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                <p><a class="btn btn-lg" href="#">Cadastrar</a></p>
-              </div>
-            </div>
-          </div>-->
-        <!--Texto e botâo no centro-->
-        <div class="carousel-item active">
-            <img class="second-slide" src="imagens/banner-principal.png" alt="mulher se abracando">
-            <div class="container">
-                <div class="carousel-caption">
-                    <h1>ONG Amor na Pele</h1>
-                    <p>Buscamos através de um trabalho criterioso e avaliado caso a caso, devolver a autoestima e a alegria perdida, e assim transformando a vida e o destino de milhares de mulheres.</p>
-                    <p><a class="btn btn-lg" href="#">Cadastrar</a></p>
-                </div>
-            </div>
-        </div>
-        <!--Texto e botâo na direita-->
-        <div class="carousel-item">
-            <img class="third-slide" src="imagens/banner-principal2.png" alt="mulher se abracando">
-            <div class="container">
-                <div class="carousel-caption text-right">
-                    <h1>ONG Amor na Pele</h1>
-                    <p>Buscamos através de um trabalho criterioso e avaliado caso a caso, devolver a autoestima e a alegria perdida, e assim transformando a vida e o destino de milhares de mulheres.</p>
-                    <p><a class="btn btn-lg" href="#">Cadastrar</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Voltar</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Avançar</span>
-    </a>
 </div>
-
-
-<div class="container py-4">
-    <div class="row align-items-md-stretch">
-        <!--Quem somos-->
-        <div class="col-md-6 mt-2 col-lg-3">
-            <div class="h-100 p-5 rounded-3 shadow-sm  d-flex flex-column cards">
-                <h3>Quem somos</h3>
-                <p>
-                    Somos um grupo de estudantes de tecnologia que acredita no poder da conexão entre histórias e pessoas.
-                    Também acreditamos que a autoestima está conectada com saúde, bem-estar e qualidade de vida.
-                    Foi com isso em mente, que nos unimos para proporcionar o elo entre mulheres em busca de uma solução e
-                    ONGs que oferecem um atendimento qualificado e humanizado.
-                </p>
-                <button class="btn btn-outline-secondary" type="button">Se tiver botão </button>
+<!--Final Carrossel-->
+<!--Início cards institucionais-->
+<div id="institucional">
+    <div class="col-md-12">
+        <div class="card h-100 g-0 rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block">
+                <img src="~/imagens/logotipo.png"
+                     class="img-fluid rounded-start"
+                     alt="logotipo Amor na Pele"
+                     width="200" />
             </div>
-        </div>
-        <!--Missão-->
-        <div class="col-md-6 mt-2 col-lg-3">
-            <div class="h-100 p-5 rounded-3 shadow-sm  d-flex flex-column cards ">
-                <h3>Missão</h3>
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="d-inline-block mb-2">Quem somos</h3>
                 <p>
-                    Nossa missão é alcançar mulheres que necessitem e, através de nossos parceiros, ajudar a resgatar a autoestima e
-                    confiança de mulheres que foram submetidas à algum tratamento, e vítimas de violência que carregam marcas e cicatrizes
-                    na pele.
+                    Somos um grupo de estudantes de tecnologia que acredita no poder
+                    da conexão entre histórias e pessoas. Também acreditamos que a
+                    autoestima está conectada com saúde, bem-estar e qualidade de
+                    vida. Foi com isso em mente, que nos unimos para proporcionar o
+                    elo entre mulheres em busca de uma solução e ONGs que oferecem
+                    um atendimento qualificado e humanizado.
                 </p>
-                <button class="btn btn-outline-secondary" type="button">Se tiver botão </button>
-            </div>
-        </div>
-        <!--Visão-->
-        <div class="col-md-6 mt-2 col-lg-3">
-            <div class="h-100 p-5 rounded-3 shadow-sm  d-flex flex-column cards">
-                <h3>Visão</h3>
-                <p>
-                    Proporcionar transformações positivas na autoestima de cada mulher atendida, de forma que sintam-se seguras e
-                    confiantes para se desenvolver em todos os âmbitos de vida.
-                </p>
-                <button class="btn btn-outline-secondary" type="button">Se tiver botão </button>
-            </div>
-        </div>
-        <!--Valores-->
-        <div class="col-md-6 mt-2 col-lg-3">
-            <div class="h-100 p-5 rounded-3 shadow-sm  d-flex flex-column cards">
-                <h3>Valores</h3>
-                <p>Acolhimento, segurança, bem-estar e autoestima.</p>
-                <button class="btn btn-outline-secondary" type="button">Se tiver botão </button>
             </div>
         </div>
     </div>
-    <div class="container px-4 py-5 mt-2" id="icon-grid">
-        <h2 class="pb-2 border-bottom align-items-center">Números Importantes</h2>
-
-        <div class="row  g-4 py-5">
-            <div class="col-md-6 col-lg-3  p-5 rounded-3 shadow-sm  d-flex flex-column">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap" /></svg>
-                <div>
-                    <p>Acolhimentos</p>
-                    <h4 class="fw-bold mb-0">32</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3>Missão</h3>
+                    <p>
+                        Nossa missão é alcançar mulheres que necessitem e, através de
+                        nossos parceiros, ajudar a resgatar a autoestima e confiança
+                        de mulheres que foram submetidas à algum tratamento, e vítimas
+                        de violência que carregam marcas e cicatrizes na pele.
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 p-5 rounded-3 shadow-sm  d-flex flex-column">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill" /></svg>
-                <div>
-                    <p>Tratamentos Psicológicos</p>
-                    <h4 class="fw-bold mb-0">22</h4>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3>Visão</h3>
+                    <p>
+                        Proporcionar transformações positivas na autoestima de cada
+                        mulher atendida, de forma que sintam-se seguras e confiantes
+                        para se desenvolver em todos os âmbitos de vida.
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 p-5 rounded-3 shadow-sm  d-flex flex-column">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3" /></svg>
-                <div>
-                    <p>Tratamentos Estéticos</p>
-                    <h4 class="fw-bold mb-0">14</h4>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h3>Valores</h3>
+                    <p>
+                        Os valores que defendemos são o acolhimento, a segurança, o
+                        bem-estar e a autoestima.
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 p-5 rounded-3 shadow-sm  d-flex flex-column ">
-                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home" /></svg>
-                <div>
-                    <p>Cirurgias</p>
-                    <h4 class="fw-bold mb-0">8</h4>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
+<!--Final Cards institucionais-->
+<!--Início seção de atendimentos realizados-->
+<div class="container px-4 py-5 mt-2" id="icon-grid">
+    <h2 class="pb-2 border-bottom align-items-center">
+        Números Importantes
+    </h2>
+
+    <div class="row g-4 py-5">
+        <div class="col-md-6 col-lg-3 p-5 rounded-3 shadow-sm d-flex flex-column">
+            <div>
+                <p>Acolhimentos</p>
+                <h4 class="fw-bold mb-0">32</h4>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 p-5 rounded-3 shadow-sm d-flex flex-column">
+            <div>
+                <p>Tratamentos Psicológicos</p>
+                <h4 class="fw-bold mb-0">22</h4>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 p-5 rounded-3 shadow-sm d-flex flex-column">
+            <div>
+                <p>Tratamentos Estéticos</p>
+                <h4 class="fw-bold mb-0">14</h4>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3 p-5 rounded-3 shadow-sm d-flex flex-column">
+            <div>
+                <p>Cirurgias</p>
+                <h4 class="fw-bold mb-0">8</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Newsletter-->
+<section class="newsletter">
+    <form asp-action="cadastroNewsletter" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2>Receba as nossas novidades!</h2>
+                        <div class="input-group">
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Informe o seu endereço de e-mail"
+                                   asp-for="emailNewsletter" />
+                            <button class="btn btn-dark" type="submit">Inscreva-se agora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

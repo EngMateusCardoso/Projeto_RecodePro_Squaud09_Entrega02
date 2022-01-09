@@ -7,14 +7,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Amor_na_Pele_Squad09_Entrega02.Models
 {
-    [Table("CadastroNewsletter")]
-    public class CadastroNewsletter
+    public class ModelDuploContatoNewsletter
     {
         [Key]
-        public int ID_Newsletter { get; set; }
+        public int ID_ModelDuploContatoNewsletter { get; set; }
 
-        public String emailNewsletter { get; set; }
+        public CadastroContato cadCont { get; set; }
 
+        public CadastroNewsletter cadNews { get; set; }
     }
 }
-

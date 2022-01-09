@@ -14,13 +14,13 @@ namespace Amor_na_Pele_Squad09_Entrega02.Models
         [Key]
         public int ID_Mulher { get; set; }
 
-        public string nomeMulher { get; set; }
+        public String nomeMulher { get; set; }
 
         public DateTime dataNascimento { get; set; }
 
         public String numeroTelefoneMulher { get; set; }
 
-        public string emailMulher { get; set; }
+        public String emailMulher { get; set; }
         
     }
 }

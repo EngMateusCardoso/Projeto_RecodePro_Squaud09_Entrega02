@@ -110,13 +110,7 @@ namespace Amor_na_Pele_Squad09_Entrega02.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<bool>("aceitaReceber")
-                        .HasColumnType("bit");
-
                     b.Property<string>("emailNewsletter")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("nomeNewsletter")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID_Newsletter");

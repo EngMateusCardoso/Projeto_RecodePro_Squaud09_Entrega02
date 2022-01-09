@@ -10,13 +10,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /*Menu navegação*/
-nav {
+.navbar {
   background-color: #058177;
 }
-nav ul li a {
+.navbar ul li a {
   font-size: larger;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   padding: 7px 13px;
-  color: #fff !important;
 }
 a.active,
 a:hover {
@@ -24,42 +25,8 @@ a:hover {
   color: #feaec9 !important;
 }
 .btn {
-  background-color: #058177;
-  color: #fff;
-}
-.btn:hover {
-  background-color: #feaec9;
-  color: #fff !important;
+  background-color: #058177 !important;
   border: none;
-}
-.h-100 {
-  border-radius: 40px 0;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.h-100 h3 {
-  color: #e23d8c;
-}
-#icon-grid {
-  background-color: #fff0f5;
-  text-align: center;
-}
-.carousel-item img {
-  width: 100%;
-}
-.carousel-caption p {
-  opacity: 0.8;
-}
-@media (max-width: 960px) {
-  .carousel-caption h1 {
-    display: none;
-  }
-}
-@media (max-width: 740px) {
-  .carousel-caption {
-    display: none;
-  }
 }
 .newsletter {
   padding: 40px;
@@ -73,4 +40,135 @@ footer p,
 footer ul li a {
   color: #fff;
   text-align: center;
+}
+
+/*Página Home*/
+/*Carroseel*/
+.carousel-item img {
+  width: 100%;
+}
+.carousel-caption h4 {
+  opacity: 0.8;
+}
+@media (max-width: 960px) {
+  .carousel-caption h1 {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+/*Cards institucionais*/
+#institucional {
+  padding: 60px;
+}
+.h-100 {
+  border-radius: 40px 0;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.h-100 h3 {
+  color: #e23d8c;
+  font-family: "Poppins", sans-serif;
+}
+#icon-grid {
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+/*Página Cadastro*/
+.card-title {
+  color: white;
+  font-size: 30px;
+}
+.card-text {
+  color: #058177;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card {
+  padding: 10px;
+  text-align: center;
+}
+/*Páginas Cadastrar Empresa, Cadastrar Pessoa e Contato*/
+.titleCadastrarEmpresa,
+.titleCadastrarPessoa,
+.titleContato {
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  color: #e23d8c;
+  margin-bottom: 40px;
+}
+label {
+  color: #e23d8c;
+  font-weight: bolder;
+}
+.cardForm {
+  margin-right: 2vw;
+  margin-left: 2vw;
+  padding: 15px 40px;
+  background-color: #fae9ee;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(212, 197, 197, 0.897);
+}
+#inputNome,
+#inputCNPJ,
+#inputRazaoSocial,
+#inputTelefone,
+#inputEmail,
+#inputEstado,
+#inputCidade,
+#inputEndereco,
+#inputEspecialidade,
+#inputSenha,
+#inputCPF,
+#inputNascimento,
+#textAreaMensagem {
+  margin-bottom: 25px;
+  border: 1px solid #999;
+}
+
+#inputNome:focus,
+#inputCNPJ:focus,
+#inputRazaoSocial:focus,
+#inputTelefone:focus,
+#inputEmail:focus,
+#inputEstado:focus,
+#inputCidade:focus,
+#inputEndereco:focus,
+#inputEspecialidade:focus,
+#inputSenha:focus,
+#inputEmail:focus,
+#inputCPF:focus,
+#textAreaMensagem:focus {
+  border-color: #e23d8c;
+}
+#img-form img {
+  width: 100%;
+  padding: 15px;
+}
+.container {
+  padding-bottom: 30px;
+}
+/*Página parceiros*/
+.cardParceiros {
+  padding: 40px;
+}
+.card-ind-parc {
+  padding: 20px;
+}
+.card-header {
+  padding-top: 30px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #058177;
+  background-color: #baf0ee;
+}
+.card-text1 {
+  text-align: justify;
 }

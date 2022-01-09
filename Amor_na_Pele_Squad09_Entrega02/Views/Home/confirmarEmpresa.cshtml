@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Amor_na_Pele_Squad09_Entrega02.Models.CadastroEmpresa>
+
+@{
+    ViewData["Title"] = "Cadastrar Empresa";
+}
+
+<h1 class="titleCadastrarEmpresa">Seu cadastro</h1>
+<!--Formulário-->
+<div class="container bgtabela">
+    <div class="cont">
+        @{ if (Model != null)
+            {
+                var cont = 0;
+                foreach (var i in Model)
+                {
+                    cont++;
+                }
+                var test = 0;
+                foreach (var item in Model)
+                {
+                    test++;
+                    if (test == cont)
+                    {
+                        <table class="table">
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Nome Completo</th>
+                                    <td>@item.nomeParaContatoEmpresa</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">CNPJ</th>
+                                    <td>@item.Cnpj</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Razão social</th>
+                                    <td>@item.RazaoSocial</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Telefone</th>
+                                    <td>@item.NumeroTelefoneEmpresa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Endereço de e-mail</th>
+                                    <td>@item.emailEmpresa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Estado</th>
+                                    <td>@item.estado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cidade</th>
+                                    <td>@item.cidade</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Endereço</th>
+                                    <td>@item.endereco</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Especialidade do negócio</th>
+                                    <td>@item.descricaoNegocio</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Protocolo de cadastro</th>
+                                    <td>@item.ID_Empresa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <a class="btn btn-dark" asp-action="Index">Confirmar</a>
+                            <a class="btn btn-dark" asp-action="editarEmpresa" asp-route-id="@item.ID_Empresa">Editar</a>
+                            <a class="btn btn-dark" asp-action="DeletarEmpresa" asp-route-id="@item.ID_Empresa">Deletar</a>
+                        </div>
+                    }
+                }
+            }
+        }
+    </div>
+
+</div>
