@@ -1,4 +1,5 @@
-﻿
+﻿@model Amor_na_Pele_Squad09_Entrega02.Models.CadastroMulher
+
 @{
     ViewData["Title"] = "EditarMulher";
 }
@@ -10,10 +11,10 @@
 
         <div class="card mb-4 shadow-sm">
 
-            <form class="cardForm" action="cadastrarPessoa.html">
+            <form class="cardForm" action="" method="post">
                 <div class="form-group">
                     <label for="inputNome" style="color: #e23d8c; font-size: 20px"><strong>Nome completo</strong></label>
-                    <input type="text" class="form-control" id="inputNome" placeholder="Nome" />
+                    <input type="text" class="form-control" id="inputNome" placeholder="Nome" asp-for="nomeMulher" />
                 </div>
 
                 <div class="form-group">
@@ -23,12 +24,12 @@
                             nascimento
                         </strong>
                     </label>
-                    <input type="date" class="form-control" id="inputNascimento" />
+                    <input type="date" class="form-control" id="inputNascimento" asp-for="dataNascimento" />
                 </div>
 
                 <div class="form-group">
                     <label for="inputTelefone" style="color: #e23d8c; font-size: 20px"><strong>Telefone</strong></label>
-                    <input type="tel" class="form-control" id="inputTelefone" placeholder="Telefone" />
+                    <input type="tel" class="form-control" id="inputTelefone" placeholder="Telefone" asp-for="numeroTelefoneMulher" />
                 </div>
 
                 <div class="form-group">
@@ -38,7 +39,12 @@
                             e-mail
                         </strong>
                     </label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="email@exemplo.com" />
+                    <input type="email" class="form-control" id="inputEmail" placeholder="email@exemplo.com" asp-for="emailMulher" />
+                </div>
+
+                <div class="form-group">
+                    <label for="inputTelefone" style="color: #e23d8c; font-size: 20px"><strong>Protocolo de cadastro</strong></label>
+                    <input type="tel" class="form-control" id="inputTelefone" placeholder="Telefone" asp-for="ID_Mulher" />
                 </div>
 
                 <button type="submit" class="btn btn-dark">Confirmar</button>
@@ -46,19 +52,3 @@
         </div>
     </div>
 </div>
-<!--Newsletter-->
-<section class="newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="content">
-                    <h2>Receba as nossas novidades!</h2>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Informe o seu endereço de e-mail" />
-                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

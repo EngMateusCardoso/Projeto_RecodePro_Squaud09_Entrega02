@@ -8,22 +8,22 @@
 <!--Tabela-->
 <div class="container bgtabela">
     <div class="cont">
-        <table class="table">
-
-            <tbody>
-                @{ if (Model != null)
+        @{ if (Model != null)
+            {
+                var cont = 0;
+                foreach (var i in Model)
+                {
+                    cont++;
+                }
+                var test = 0;
+                foreach (var item in Model)
+                {
+                    test++;
+                    if (test == cont)
                     {
-                        var cont = 0;
-                        foreach (var i in Model)
-                        {
-                            cont++;
-                        }
-                        var test = 0;
-                        foreach (var item in Model)
-                        {
-                            test++;
-                            if (test == cont)
-                            {
+                        <table class="table">
+
+                            <tbody>
                                 <tr>
                                     <th scope="row">Nome Completo</th>
                                     <td>@item.nomeMulher</td>
@@ -43,19 +43,24 @@
                                     <th scope="row">Endereço de e-mail</th>
                                     <td>@item.emailMulher</td>
                                 </tr>
-                            }
-                        }
+                                <tr>
+                                    <th scope="row">Protocolo de cadastro</th>
+                                    <td>@item.ID_Mulher</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div>
+                            <a class="btn btn-dark" role="button"
+                               aria-expanded="false" asp-action="Index">Confirmar</a>
+                            <a class="btn btn-dark" role="button"
+                               aria-expanded="false" asp-action="editarMulher" asp-route-id="@item.ID_Mulher">Editar</a>
+                            <a class="btn btn-dark "asp-action="DeletarMulher" asp-route-id="@item.ID_Mulher">Deletar</a>
+                        </div>
                     }
                 }
-            </tbody>
-        </table>
-        <div>
-            <a class="btn btn-dark" role="button"
-               aria-expanded="false"asp-action="Index">Confirmar</a>
-            <a class="btn btn-dark" role="button"
-               aria-expanded="false" asp-action="editarMulher">Editar</a>
-            <button class="btn btn-dark">Deletar</button>
-        </div>
+            }
+        }
     </div>
 
 </div>

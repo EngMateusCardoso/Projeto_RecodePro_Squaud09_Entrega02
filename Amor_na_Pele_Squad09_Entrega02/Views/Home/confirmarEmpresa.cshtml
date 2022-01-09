@@ -8,22 +8,22 @@
 <!--Formulário-->
 <div class="container bgtabela">
     <div class="cont">
-        <table class="table">
-
-            <tbody>
-                @{ if (Model != null)
+        @{ if (Model != null)
+            {
+                var cont = 0;
+                foreach (var i in Model)
+                {
+                    cont++;
+                }
+                var test = 0;
+                foreach (var item in Model)
+                {
+                    test++;
+                    if (test == cont)
                     {
-                        var cont = 0;
-                        foreach (var i in Model)
-                        {
-                            cont++;
-                        }
-                        var test = 0;
-                        foreach (var item in Model)
-                        {
-                            test++;
-                            if (test == cont)
-                            {
+                        <table class="table">
+
+                            <tbody>
                                 <tr>
                                     <th scope="row">Nome Completo</th>
                                     <td>@item.nomeParaContatoEmpresa</td>
@@ -63,17 +63,21 @@
                                     <th scope="row">Especialidade do negócio</th>
                                     <td>@item.descricaoNegocio</td>
                                 </tr>
-                            }
-                        }
+                                <tr>
+                                    <th scope="row">Protocolo de cadastro</th>
+                                    <td>@item.ID_Empresa</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div>
+                            <a class="btn btn-dark" asp-action="Index">Confirmar</a>
+                            <a class="btn btn-dark" asp-action="editarEmpresa" asp-route-id="@item.ID_Empresa">Editar</a>
+                            <a class="btn btn-dark" asp-action="DeletarEmpresa" asp-route-id="@item.ID_Empresa">Deletar</a>
+                        </div>
                     }
                 }
-            </tbody>
-        </table>
-        <div>
-            <a class="btn btn-dark" asp-action="Index">Confirmar</a>
-            <a class="btn btn-dark" asp-action="editarEmpresa">Editar</a>
-            <button class="btn btn-dark">Deletar</button>
-        </div>
+            }
+        }
     </div>
 
 </div>

@@ -1,4 +1,5 @@
-﻿
+﻿@model Amor_na_Pele_Squad09_Entrega02.Models.CadastroEmpresa
+
 @{
     ViewData["Title"] = "editarEmpresa";
 }
@@ -9,14 +10,15 @@
     <div>
         <div class="card mb-4 shadow-sm">
 
-            <form class="cardForm" action="cadastrarEmpresa.html">
+            <form class="cardForm" action="" method="post">
                 <div class="form-group">
                     <label for="inputNome"
                            style="color: #e23d8c; font-size: 20px"><strong>Nome completo</strong></label>
                     <input type="text"
                            class="form-control"
                            id="inputNome"
-                           placeholder="Nome" />
+                           placeholder="Nome"
+                           asp-for="nomeParaContatoEmpresa" />
                 </div>
 
                 <div class="form-group">
@@ -25,7 +27,8 @@
                     <input type="text"
                            class="form-control"
                            id="inputCNPJ"
-                           placeholder="CNPJ" />
+                           placeholder="CNPJ"
+                           asp-for="Cnpj" />
                 </div>
 
                 <div class="form-group">
@@ -34,7 +37,8 @@
                     <input type="text"
                            class="form-control"
                            id="inputRazaoSocial"
-                           placeholder="Razão social" />
+                           placeholder="Razão social"
+                           asp-for="RazaoSocial" />
                 </div>
 
                 <div class="form-group">
@@ -43,7 +47,8 @@
                     <input type="tel"
                            class="form-control"
                            id="inputTelefone"
-                           placeholder="Telefone" />
+                           placeholder="Telefone"
+                           asp-for="NumeroTelefoneEmpresa" />
                 </div>
 
                 <div class="form-group">
@@ -52,7 +57,8 @@
                     <input type="email"
                            class="form-control"
                            id="inputEmail"
-                           placeholder="email@exemplo.com" />
+                           placeholder="email@exemplo.com"
+                           asp-for="emailEmpresa" />
                 </div>
 
                 <div class="form-group">
@@ -61,7 +67,8 @@
                     <input type="text"
                            class="form-control"
                            id="inputEstado"
-                           placeholder="Estado" />
+                           placeholder="Estado"
+                           asp-for="estado" />
                 </div>
 
                 <div class="form-group">
@@ -70,7 +77,8 @@
                     <input type="text"
                            class="form-control"
                            id="inputCidade"
-                           placeholder="Cidade" />
+                           placeholder="Cidade"
+                           asp-for="cidade" />
                 </div>
 
                 <div class="form-group">
@@ -79,7 +87,8 @@
                     <input type="text"
                            class="form-control"
                            id="inputEndereco"
-                           placeholder="Endereço" />
+                           placeholder="Endereço"
+                           asp-for="endereco" />
                 </div>
 
                 <div class="form-group">
@@ -88,7 +97,18 @@
                     <input type="text"
                            class="form-control"
                            id="inputEspecialidade"
-                           placeholder="Informe uma especialidade" />
+                           placeholder="Informe uma especialidade"
+                           asp-for="descricaoNegocio" />
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEndereco"
+                           style="color: #e23d8c; font-size: 20px"><strong>Protocoço de cadastro</strong></label>
+                    <input type="text"
+                           class="form-control"
+                           id="inputEndereco"
+                           placeholder="Endereço"
+                           asp-for="ID_Empresa" />
                 </div>
 
                 <button type="submit" class="btn btn-dark">Confirmar</button>
@@ -96,21 +116,3 @@
         </div>
     </div>
 </div>
-
-
-<!--Newsletter-->
-<section class="newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="content">
-                    <h2>Receba as nossas novidades!</h2>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Informe o seu endereço de e-mail" />
-                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

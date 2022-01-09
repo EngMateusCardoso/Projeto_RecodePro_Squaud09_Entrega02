@@ -43,16 +43,6 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
             return View();
         }
 
-        public IActionResult editarMulher()
-        {
-            return View();
-        }
-
-        public IActionResult editarEmpresa()
-        {
-            return View();
-        }
-
         //CREATE ou POST ou INSERT
 
         //Insert na tabela de Newsleter pelas Viwers Index, Parceiros e Links
@@ -130,6 +120,66 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
         {
             List<CadastroEmpresa> empresa = _context.CadastroEmpresas.ToList();
             return View(empresa);
+        }
+
+        //UPDATE
+
+        //update do cadastro Mulher
+        public IActionResult EditarMulher(int id)
+        {
+            var mulher = _context.CadastroMulheres.Find(id);
+            if (mulher == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(mulher);
+        }
+
+        [HttpPost]
+        public IActionResult EditarMulher(CadastroMulher cadastroMulher)
+        {
+            _context.CadastroMulheres.Update(cadastroMulher);
+            _context.SaveChanges();
+            return RedirectToAction("confirmarMulher");
+        }
+
+        //Update do cadastro Empresa
+        public IActionResult EditarEmpresa(int id)
+        {
+            var empresa = _context.CadastroEmpresas.Find(id);
+            if (empresa == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(empresa);
+        }
+
+        [HttpPost]
+        public IActionResult EditarEmpresa(CadastroEmpresa cadastroEmpresa)
+        {
+            _context.CadastroEmpresas.Update(cadastroEmpresa);
+            _context.SaveChanges();
+            return RedirectToAction("confirmarEmpresa");
+        }
+
+        //DELETE
+
+        //delete Mulher
+        public IActionResult DeletarMulher(int id)
+        {
+            var mulher = _context.CadastroMulheres.Find(id);
+            _context.CadastroMulheres.Remove(mulher);
+            _context.SaveChanges();
+            return RedirectToAction("Cadastrar");
+        }
+
+        //delete Empresa
+        public IActionResult DeletarEmpresa(int id)
+        {
+            var empresa = _context.CadastroEmpresas.Find(id);
+            _context.CadastroEmpresas.Remove(empresa);
+            _context.SaveChanges();
+            return RedirectToAction("Cadastrar");
         }
 
     }
