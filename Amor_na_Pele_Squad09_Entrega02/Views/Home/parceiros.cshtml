@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Amor_na_Pele_Squad09_Entrega02.Models.CadastroNewsletter
+
+@{
     ViewData["Title"] = "Parceiros";
 }
 
@@ -48,7 +50,6 @@
             </div>
         </div>
         <!--Fim do Parceiro 1-->
-
         <!--Parceiro 2-->
         <div class="card-ind-parc">
             <div class="card border-light shadow-sm h-md-250 mb-12">
@@ -78,7 +79,6 @@
         </div>
     </div>
     <!--Fim do Parceiro 2-->
-
     <!--Início Parceiro 3-->
     <div class="card-ind-parc">
         <div class="card border-light shadow-sm h-md-250 mb-12">
@@ -109,22 +109,23 @@
     <!--Fim do Parceiro 3-->
 </div>
 <!--Fim dos cards dos parceiros-->
-
-<!--Newsletter-->
 <section class="newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="content">
-                    <h2>Receba as nossas novidades!</h2>
-                    <div class="input-group">
-                        <input type="email"
-                               class="form-control"
-                               placeholder="Informe o seu endereço de e-mail" />
-                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
+    <form asp-action="cadastroNewsletter" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2>Receba as nossas novidades!</h2>
+                        <div class="input-group">
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Informe o seu endereço de e-mail"
+                                   asp-for="emailNewsletter" />
+                            <button class="btn btn-dark" type="submit">Inscreva-se agora</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </section>

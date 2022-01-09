@@ -62,43 +62,68 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
         {
             return View();
         }
-        /*
-        //CREATE
 
-        //contato
+        //CREATE ou POST ou INSERT
+
+        //Insert na tabela de Newsleter pelas Viwers Index, Parceiros e Links
         [HttpPost]
-        public IActionResult contato(CadastroContato contato)
+        public IActionResult cadastroNewsletter(CadastroNewsletter newsletter)
         {
-            _context.Add(contato);
+            _context.CadastroNewsletters.Add(newsletter);
             _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        //Insert nas tabelas de Contato e Newsletter pela view de contato
+        [HttpPost]
+        public IActionResult cadastroContatoNewsletter(ModelDuploContatoNewsletter cadcontnews)
+        {
+            if (!(cadcontnews.cadCont == null))
+            {
+                _context.CadastroContatos.Add(cadcontnews.cadCont);
+                _context.SaveChanges();
+            }
+            else
+            {
+                if (!(cadcontnews.cadNews == null))
+                {
+                    _context.CadastroNewsletters.Add(cadcontnews.cadNews);
+                    _context.SaveChanges();
+                }
+            }
             return View("Index");
         }
 
-        //Cadastro da mulher
-        [HttpPost]
-        public IActionResult cadastroMulher(CadastroMulher cadastroMulher)
-        {
-            _context.Add(cadastroMulher);
-            _context.SaveChanges();
-            return View("cadastrar");
-        }
+        //Insert nas tabelas de Mulher, Empresa e Newsletter pela view de cadastar
 
-        //Cadastro Empresa
         [HttpPost]
-        public IActionResult cadastroEmpresa(CadastroEmpresa cadastroEmpresa)
+        public IActionResult cadastroMulherEmpresaNewsletter(ModelTriploMulherEmpresaNewsletter cadMuEmpNews)
         {
-            _context.Add(cadastroEmpresa);
-            _context.SaveChanges();
-            return View("cadastrar");
-        }
+            if (!(cadMuEmpNews.cadMulher == null))
+            {
+                _context.CadastroMulheres.Add(cadMuEmpNews.cadMulher);
+                _context.SaveChanges();
+                return RedirectToAction("confirmarMulher");
+            }
+            else
+            {
+                if (!(cadMuEmpNews.cadEmp == null))
+                {
+                    _context.CadastroEmpresas.Add(cadMuEmpNews.cadEmp);
+                    _context.SaveChanges();
+                    return RedirectToAction("confirmarEmpresa");
+                }
+                else
+                {
+                    if (!(cadMuEmpNews.cadNews == null))
+                    {
+                        _context.CadastroNewsletters.Add(cadMuEmpNews.cadNews);
+                        _context.SaveChanges();
+                    }
+                    return View("Index");
+                }
+            }
 
-        //Cadastro Newsletter
-        [HttpPost]
-        public IActionResult cadastroNewsletter(CadastroNewsletter cadastroNewsletter)
-        {
-            _context.Add(cadastroNewsletter);
-            _context.SaveChanges();
-            return View("Index");
-        }*/
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿
+﻿@model Amor_na_Pele_Squad09_Entrega02.Models.ModelDuploContatoNewsletter
+
 @{
     ViewData["Title"] = "Contato";
 }
@@ -13,13 +14,14 @@
             </div>
         </div>
         <div class="col-md-8 order-md-2">
-            <form class="cardForm">
+            <form class="cardForm" asp-action="cadastroContatoNewsletter" method="post">
                 <div class="form-group">
                     <label for="inputNome">Nome</label>
                     <input type="text"
                            class="form-control"
                            id="inputNome"
-                           placeholder="Nome" />
+                           placeholder="Nome"
+                           asp-for="cadCont.nomeContato"/>
                 </div>
 
                 <div class="form-group">
@@ -27,7 +29,8 @@
                     <input type="email"
                            class="form-control"
                            id="inputEmail"
-                           placeholder="email@exemplo.com" />
+                           placeholder="email@exemplo.com"
+                           asp-for="cadCont.emailContato"/>
                 </div>
 
                 <div class="form-group">
@@ -35,28 +38,35 @@
                     <textarea class="form-control"
                               id="textAreaMensagem"
                               placeholder="Mensagem..."
-                              rows="3"></textarea>
+                              rows="3"
+                              asp-for="cadCont.msg"></textarea>
                 </div>
-                <a href="#" class="btn btn-dark">Enviar</a>
+                <button class="btn btn-dark" type="submit">
+                    Enviar
+                 </button>
+
             </form>
         </div>
     </div>
 </div>
 <!--Newsletter-->
 <section class="newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="content">
-                    <h2>Receba as nossas novidades!</h2>
-                    <div class="input-group">
-                        <input type="email"
-                               class="form-control"
-                               placeholder="Informe o seu endereço de e-mail" />
-                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
+    <form asp-action="cadastroContatoNewsletter" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h2>Receba as nossas novidades!</h2>
+                        <div class="input-group">
+                            <input type="email"
+                                   class="form-control"
+                                   placeholder="Informe o seu endereço de e-mail"
+                                   asp-for="cadNews.emailNewsletter" />
+                            <button class="btn btn-dark" type="submit">Inscreva-se agora</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </section>
