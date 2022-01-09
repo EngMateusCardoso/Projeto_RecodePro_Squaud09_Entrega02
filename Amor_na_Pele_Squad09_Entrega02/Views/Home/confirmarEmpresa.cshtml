@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<Amor_na_Pele_Squad09_Entrega02.Models.CadastroEmpresa>
+
 @{
     ViewData["Title"] = "Cadastrar Empresa";
 }
@@ -10,71 +11,69 @@
         <table class="table">
 
             <tbody>
-                <tr>
-                    <th scope="row">Nome Completo</th>
-                    <td>nome</td>
+                @{ if (Model != null)
+                    {
+                        var cont = 0;
+                        foreach (var i in Model)
+                        {
+                            cont++;
+                        }
+                        var test = 0;
+                        foreach (var item in Model)
+                        {
+                            test++;
+                            if (test == cont)
+                            {
+                                <tr>
+                                    <th scope="row">Nome Completo</th>
+                                    <td>@item.nomeParaContatoEmpresa</td>
 
-                </tr>
-                <tr>
-                    <th scope="row">CNPJ</th>
-                    <td>1595215451515</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">CNPJ</th>
+                                    <td>@item.Cnpj</td>
 
-                </tr>
-                <tr>
-                    <th scope="row">Razão social</th>
-                    <td>........</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Razão social</th>
+                                    <td>@item.RazaoSocial</td>
 
-                </tr>
-                <tr>
-                    <th scope="row">Telefone</th>
-                    <td>(xx)xxxx - xxxx</td>
-                </tr>
-                <tr>
-                    <th scope="row">Endereço de e-mail</th>
-                    <td>Email@mail.com</td>
-                </tr>
-                <tr>
-                    <th scope="row">Estado</th>
-                    <td>Rio de Janeiro</td>
-                </tr>
-                <tr>
-                    <th scope="row">Cidade</th>
-                    <td>Rio</td>
-                </tr>
-                <tr>
-                    <th scope="row">Endereço</th>
-                    <td>Endereço aqui.</td>
-                </tr>
-                <tr>
-                    <th scope="row">Especialidade do negócio</th>
-                    <td>Cirurgias plásticas</td>
-                </tr>
-
-
+                                </tr>
+                                <tr>
+                                    <th scope="row">Telefone</th>
+                                    <td>@item.NumeroTelefoneEmpresa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Endereço de e-mail</th>
+                                    <td>@item.emailEmpresa</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Estado</th>
+                                    <td>@item.estado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cidade</th>
+                                    <td>@item.cidade</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Endereço</th>
+                                    <td>@item.endereco</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Especialidade do negócio</th>
+                                    <td>@item.descricaoNegocio</td>
+                                </tr>
+                            }
+                        }
+                    }
+                }
             </tbody>
         </table>
         <div>
-            <a class="btn btn-dark" href="index.html">Confirmar</a>
+            <a class="btn btn-dark" asp-action="Index">Confirmar</a>
             <a class="btn btn-dark" asp-action="editarEmpresa">Editar</a>
             <button class="btn btn-dark">Deletar</button>
         </div>
     </div>
 
 </div>
-
-<!--Newsletter-->
-<section class="newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="content">
-                    <h2>Receba as nossas novidades!</h2>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Informe o seu endereço de e-mail" />
-                        <a href="#" class="btn btn-dark">Inscreva-se agora</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>

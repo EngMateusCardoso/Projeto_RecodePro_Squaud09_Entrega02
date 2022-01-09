@@ -43,16 +43,6 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
             return View();
         }
 
-        public IActionResult confirmarEmpresa()
-        {
-            return View();
-        }
-
-        public IActionResult confirmarMulher()
-        {
-            return View();
-        }
-
         public IActionResult editarMulher()
         {
             return View();
@@ -125,5 +115,22 @@ namespace Amor_na_Pele_Squad09_Entrega02.Controllers
             }
 
         }
+
+        //READ
+
+        //read do cadastro mulher(neste caso o site apresentará apenas o cadastro da pessoa)
+        public IActionResult confirmarMulher()
+        {
+            List<CadastroMulher> mulher = _context.CadastroMulheres.ToList();
+            return View(mulher);
+        }
+
+
+        public IActionResult confirmarEmpresa()
+        {
+            List<CadastroEmpresa> empresa = _context.CadastroEmpresas.ToList();
+            return View(empresa);
+        }
+
     }
 }
