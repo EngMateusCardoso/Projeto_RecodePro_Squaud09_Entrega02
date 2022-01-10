@@ -93,6 +93,10 @@ footer ul li a {
   padding: 10px;
   text-align: center;
 }
+.card-formulario{
+    padding:40px;
+    padding-bottom: 60px;
+}
 /*Páginas Cadastrar Empresa, Cadastrar Pessoa e Contato*/
 .titleCadastrarEmpresa,
 .titleCadastrarPessoa,
@@ -127,9 +131,10 @@ label {
 #inputSenha,
 #inputCPF,
 #inputNascimento,
-#textAreaMensagem {
-  margin-bottom: 25px;
-  border: 1px solid #999;
+#textAreaMensagem,
+#inputId {
+    margin-bottom: 25px;
+    border: 1px solid #999;
 }
 
 #inputNome:focus,

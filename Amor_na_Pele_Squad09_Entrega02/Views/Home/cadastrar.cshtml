@@ -52,53 +52,56 @@
             <!--Formulário Mulher-->
             <div class="row">
                 <div class="collapse" id="collapseFormMulher">
-
                     <div class="card mb-4 shadow-sm">
-                        <div class="tituloform ">
-                            <h2>Cadastro Mulher</h2>
+                        <div class="card-formulario">
+                            <div class="tituloform ">
+                                <h2>Cadastro Mulher</h2>
+                            </div>
+                            <form class="cardForm" asp-action="cadastroMulherEmpresaNewsletter" method="post">
+                                <div class="form-group">
+                                    <label for="inputNome"
+                                           style="color: #e23d8c; font-size: 20px">Nome completo:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputNome"
+                                           placeholder="Nome"
+                                           required
+                                           asp-for="cadMulher.nomeMulher" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputNascimento"
+                                           style="color: #e23d8c; font-size: 20px">Data de nascimento:</label>
+                                    <input type="date"
+                                           class="form-control"
+                                           id="inputNascimento"
+                                           asp-for="cadMulher.dataNascimento" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputTelefone"
+                                           style="color: #e23d8c; font-size: 20px">Telefone:</label>
+                                    <input type="tel"
+                                           class="form-control"
+                                           id="inputTelefone"
+                                           placeholder="Telefone"
+                                           asp-for="cadMulher.numeroTelefoneMulher" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail"
+                                           style="color: #e23d8c; font-size: 20px">Endereço de e-mail:</label>
+                                    <input type="email"
+                                           class="form-control"
+                                           id="inputEmail"
+                                           placeholder="email@exemplo.com"
+                                           required
+                                           asp-for="cadMulher.emailMulher" />
+                                </div>
+
+                                <button type="submit" class="btn btn-dark">Cadastrar</button>
+                            </form>
                         </div>
-                        <form class="cardForm" asp-action="cadastroMulherEmpresaNewsletter" method="post">
-                            <div class="form-group">
-                                <label for="inputNome"
-                                       style="color: #e23d8c; font-size: 20px">Nome completo:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputNome"
-                                       placeholder="Nome"
-                                       asp-for="cadMulher.nomeMulher" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputNascimento"
-                                       style="color: #e23d8c; font-size: 20px">Data de nascimento:</label>
-                                <input type="date"
-                                       class="form-control"
-                                       id="inputNascimento"
-                                       asp-for="cadMulher.dataNascimento" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputTelefone"
-                                       style="color: #e23d8c; font-size: 20px">Telefone:</label>
-                                <input type="tel"
-                                       class="form-control"
-                                       id="inputTelefone"
-                                       placeholder="Telefone"
-                                       asp-for="cadMulher.numeroTelefoneMulher" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputEmail"
-                                       style="color: #e23d8c; font-size: 20px">Endereço de e-mail:</label>
-                                <input type="email"
-                                       class="form-control"
-                                       id="inputEmail"
-                                       placeholder="email@exemplo.com"
-                                       asp-for="cadMulher.emailMulher" />
-                            </div>
-
-                            <button type="submit" class="btn btn-dark">Cadastrar</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -107,102 +110,107 @@
             <div class="row">
                 <div class="collapse" id="collapseFormEmpresa">
                     <div class="card mb-4 shadow-sm">
-                        <div class="tituloform">
-                            <h2>Cadastro empresa</h2>
+                        <div class="card-formulario">
+                            <div class="tituloform">
+                                <h2>Cadastro empresa</h2>
+                            </div>
+                            <form class="cardForm" asp-action="cadastroMulherEmpresaNewsletter" method="post">
+                                <div class="form-group">
+                                    <label for="inputNome"
+                                           style="color: #e23d8c; font-size: 20px">Nome do contato:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputNome"
+                                           placeholder="Nome"
+                                           required
+                                           asp-for="cadEmp.nomeParaContatoEmpresa" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputCNPJ"
+                                           style="color: #e23d8c; font-size: 20px">CNPJ:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputCNPJ"
+                                           placeholder="CNPJ"
+                                           asp-for="cadEmp.Cnpj" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputRazaoSocial"
+                                           style="color: #e23d8c; font-size: 20px">Razão Social:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputRazaoSocial"
+                                           placeholder="Razão social"
+                                           required
+                                           asp-for="cadEmp.RazaoSocial" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputTelefone"
+                                           style="color: #e23d8c; font-size: 20px">Telefone:</label>
+                                    <input type="tel"
+                                           class="form-control"
+                                           id="inputTelefone"
+                                           placeholder="Telefone"
+                                           asp-for="cadEmp.NumeroTelefoneEmpresa" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEmail"
+                                           style="color: #e23d8c; font-size: 20px">Endereço de e-mail:</label>
+                                    <input type="email"
+                                           class="form-control"
+                                           id="inputEmail"
+                                           placeholder="email@exemplo.com"
+                                           required
+                                           asp-for="cadEmp.emailEmpresa" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEstado"
+                                           style="color: #e23d8c; font-size: 20px">Estado:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputEstado"
+                                           placeholder="Estado"
+                                           asp-for="cadEmp.estado" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputCidade"
+                                           style="color: #e23d8c; font-size: 20px">Cidade:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputCidade"
+                                           placeholder="Cidade"
+                                           asp-for="cadEmp.cidade" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEndereco"
+                                           style="color: #e23d8c; font-size: 20px">Endereço:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputEndereco"
+                                           placeholder="Endereço"
+                                           asp-for="cadEmp.endereco" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inputEspecialidade"
+                                           style="color: #e23d8c; font-size: 20px">Especialidade do seu negócio:</label>
+                                    <input type="text"
+                                           class="form-control"
+                                           id="inputEspecialidade"
+                                           placeholder="Informe a especialidade do serviço a ser oferecido"
+                                           asp-for="cadEmp.descricaoNegocio" />
+                                </div>
+
+                                <button type="submit" class="btn btn-dark">Cadastrar</button>
+                            </form>
                         </div>
-                        <form class="cardForm" asp-action="cadastroMulherEmpresaNewsletter" method="post">
-                            <div class="form-group">
-                                <label for="inputNome"
-                                       style="color: #e23d8c; font-size: 20px">Nome do contato:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputNome"
-                                       placeholder="Nome"
-                                       asp-for="cadEmp.nomeParaContatoEmpresa" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputCNPJ"
-                                       style="color: #e23d8c; font-size: 20px">CNPJ:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputCNPJ"
-                                       placeholder="CNPJ"
-                                       asp-for="cadEmp.Cnpj" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputRazaoSocial"
-                                       style="color: #e23d8c; font-size: 20px">Razão Social:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputRazaoSocial"
-                                       placeholder="Razão social"
-                                       asp-for="cadEmp.RazaoSocial" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputTelefone"
-                                       style="color: #e23d8c; font-size: 20px">Telefone:</label>
-                                <input type="tel"
-                                       class="form-control"
-                                       id="inputTelefone"
-                                       placeholder="Telefone"
-                                       asp-for="cadEmp.NumeroTelefoneEmpresa" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputEmail"
-                                       style="color: #e23d8c; font-size: 20px">Endereço de e-mail:</label>
-                                <input type="email"
-                                       class="form-control"
-                                       id="inputEmail"
-                                       placeholder="email@exemplo.com"
-                                       asp-for="cadEmp.emailEmpresa" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputEstado"
-                                       style="color: #e23d8c; font-size: 20px">Estado:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputEstado"
-                                       placeholder="Estado"
-                                       asp-for="cadEmp.estado" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputCidade"
-                                       style="color: #e23d8c; font-size: 20px">Cidade:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputCidade"
-                                       placeholder="Cidade"
-                                       asp-for="cadEmp.cidade" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputEndereco"
-                                       style="color: #e23d8c; font-size: 20px">Endereço:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputEndereco"
-                                       placeholder="Endereço"
-                                       asp-for="cadEmp.endereco" />
-                            </div>
-
-                            <div class="form-group">
-                                <label for="inputEspecialidade"
-                                       style="color: #e23d8c; font-size: 20px">Especialidade do seu negócio:</label>
-                                <input type="text"
-                                       class="form-control"
-                                       id="inputEspecialidade"
-                                       placeholder="Informe a especialidade do serviço a ser oferecido"
-                                       asp-for="cadEmp.descricaoNegocio" />
-                            </div>
-
-                            <button type="submit" class="btn btn-dark">Cadastrar</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -221,6 +229,7 @@
                                 <input type="email"
                                        class="form-control"
                                        placeholder="Informe o seu endereço de e-mail"
+                                       required
                                        asp-for="cadNews.emailNewsletter" />
                                 <button class="btn btn-dark" type="submit">Inscreva-se agora</button>
                             </div>

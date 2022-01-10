@@ -21,6 +21,7 @@
                            class="form-control"
                            id="inputNome"
                            placeholder="Nome"
+                           required
                            asp-for="cadCont.nomeContato"/>
                 </div>
 
@@ -30,6 +31,7 @@
                            class="form-control"
                            id="inputEmail"
                            placeholder="email@exemplo.com"
+                           required
                            asp-for="cadCont.emailContato"/>
                 </div>
 
@@ -39,6 +41,7 @@
                               id="textAreaMensagem"
                               placeholder="Mensagem..."
                               rows="3"
+                              required
                               asp-for="cadCont.msg"></textarea>
                 </div>
                 <button class="btn btn-dark" type="submit">
@@ -61,6 +64,7 @@
                             <input type="email"
                                    class="form-control"
                                    placeholder="Informe o seu endereço de e-mail"
+                                   required
                                    asp-for="cadNews.emailNewsletter" />
                             <button class="btn btn-dark" type="submit">Inscreva-se agora</button>
                         </div>
