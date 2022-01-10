@@ -9,110 +9,115 @@
 <div class="row">
     <div>
         <div class="card mb-4 shadow-sm">
+            <div class="card-formulario">
+                <form class="cardForm" action="" method="post">
+                    <div class="form-group">
+                        <label for="inputNome"
+                               style="color: #e23d8c; font-size: 20px"><strong>Nome completo</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputNome"
+                               placeholder="Nome"
+                               required
+                               asp-for="nomeParaContatoEmpresa" />
+                    </div>
 
-            <form class="cardForm" action="" method="post">
-                <div class="form-group">
-                    <label for="inputNome"
-                           style="color: #e23d8c; font-size: 20px"><strong>Nome completo</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputNome"
-                           placeholder="Nome"
-                           asp-for="nomeParaContatoEmpresa" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputCNPJ"
+                               style="color: #e23d8c; font-size: 20px"><strong>CNPJ</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputCNPJ"
+                               placeholder="CNPJ"
+                               asp-for="Cnpj" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputCNPJ"
-                           style="color: #e23d8c; font-size: 20px"><strong>CNPJ</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputCNPJ"
-                           placeholder="CNPJ"
-                           asp-for="Cnpj" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputRazaoSocial"
+                               style="color: #e23d8c; font-size: 20px"><strong>Razão Social</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputRazaoSocial"
+                               placeholder="Razão social"
+                               required
+                               asp-for="RazaoSocial" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputRazaoSocial"
-                           style="color: #e23d8c; font-size: 20px"><strong>Razão Social</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputRazaoSocial"
-                           placeholder="Razão social"
-                           asp-for="RazaoSocial" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputTelefone"
+                               style="color: #e23d8c; font-size: 20px"><strong>Telefone</strong></label>
+                        <input type="tel"
+                               class="form-control"
+                               id="inputTelefone"
+                               placeholder="Telefone"
+                               asp-for="NumeroTelefoneEmpresa" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputTelefone"
-                           style="color: #e23d8c; font-size: 20px"><strong>Telefone</strong></label>
-                    <input type="tel"
-                           class="form-control"
-                           id="inputTelefone"
-                           placeholder="Telefone"
-                           asp-for="NumeroTelefoneEmpresa" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputEmail"
+                               style="color: #e23d8c; font-size: 20px"><strong>Endereço de e-mail</strong></label>
+                        <input type="email"
+                               class="form-control"
+                               id="inputEmail"
+                               placeholder="email@exemplo.com"
+                               required
+                               asp-for="emailEmpresa" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputEmail"
-                           style="color: #e23d8c; font-size: 20px"><strong>Endereço de e-mail</strong></label>
-                    <input type="email"
-                           class="form-control"
-                           id="inputEmail"
-                           placeholder="email@exemplo.com"
-                           asp-for="emailEmpresa" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputEstado"
+                               style="color: #e23d8c; font-size: 20px"><strong>Estado</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputEstado"
+                               placeholder="Estado"
+                               asp-for="estado" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputEstado"
-                           style="color: #e23d8c; font-size: 20px"><strong>Estado</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputEstado"
-                           placeholder="Estado"
-                           asp-for="estado" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputCidade"
+                               style="color: #e23d8c; font-size: 20px"><strong>Cidade</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputCidade"
+                               placeholder="Cidade"
+                               asp-for="cidade" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputCidade"
-                           style="color: #e23d8c; font-size: 20px"><strong>Cidade</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputCidade"
-                           placeholder="Cidade"
-                           asp-for="cidade" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputEndereco"
+                               style="color: #e23d8c; font-size: 20px"><strong>Endereço</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputEndereco"
+                               placeholder="Endereço"
+                               asp-for="endereco" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputEndereco"
-                           style="color: #e23d8c; font-size: 20px"><strong>Endereço</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputEndereco"
-                           placeholder="Endereço"
-                           asp-for="endereco" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputEspecialidade"
+                               style="color: #e23d8c; font-size: 20px"><strong>Especialidade do seu negócio</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputEspecialidade"
+                               placeholder="Informe uma especialidade"
+                               asp-for="descricaoNegocio" />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputEspecialidade"
-                           style="color: #e23d8c; font-size: 20px"><strong>Especialidade do seu negócio</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputEspecialidade"
-                           placeholder="Informe uma especialidade"
-                           asp-for="descricaoNegocio" />
-                </div>
+                    <div class="form-group">
+                        <label for="inputId"
+                               style="color: #e23d8c; font-size: 20px"><strong>Protocolo de cadastro</strong></label>
+                        <input type="text"
+                               class="form-control"
+                               id="inputId"
+                               placeholder="Id"
+                               asp-for="ID_Empresa"
+                               disabled />
+                    </div>
 
-                <div class="form-group">
-                    <label for="inputEndereco"
-                           style="color: #e23d8c; font-size: 20px"><strong>Protocoço de cadastro</strong></label>
-                    <input type="text"
-                           class="form-control"
-                           id="inputEndereco"
-                           placeholder="Endereço"
-                           asp-for="ID_Empresa" />
-                </div>
-
-                <button type="submit" class="btn btn-dark">Confirmar</button>
-            </form>
+                    <button type="submit" class="btn btn-dark">Confirmar</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
