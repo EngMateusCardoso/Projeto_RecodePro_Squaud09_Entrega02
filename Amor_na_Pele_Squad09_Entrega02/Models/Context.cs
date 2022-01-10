@@ -11,6 +11,7 @@ namespace Amor_na_Pele_Squad09_Entrega02.Models
     {
         public Context(DbContextOptions<Context> options) : base(options)
         {
+            Database.EnsureCreated();
         }
         public DbSet<CadastroContato> CadastroContatos { get; set; }
 
