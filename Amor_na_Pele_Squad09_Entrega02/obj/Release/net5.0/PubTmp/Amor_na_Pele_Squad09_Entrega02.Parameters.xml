@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ProjetoAmorNaPele" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Users\\Eng\.\ Mateus\ Cardodo\\Documents\\Projetos\ Git\\Projeto\ Squad\\Projeto_RecodePro_Squad09_Entrega02\\Amor_na_Pele_Squad09_Entrega02\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

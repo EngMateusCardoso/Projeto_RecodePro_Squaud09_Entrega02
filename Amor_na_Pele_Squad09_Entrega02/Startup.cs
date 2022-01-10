@@ -26,7 +26,7 @@ namespace Amor_na_Pele_Squad09_Entrega02
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<Context>(options => options.UseSqlServer(@"Data Source=DESKTOP-K8F68PB;Initial Catalog=DbAmorNaPele;Integrated Security=True"));
+            services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("conexao")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
