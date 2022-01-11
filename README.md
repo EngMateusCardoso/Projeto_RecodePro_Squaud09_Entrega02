@@ -9,11 +9,8 @@
 4. A ideia proposta e que representa algum enfrentamento à realidade identificada.
 5. Solução tecnológica desenvolvida para esse enfrentamento.
 
-Desenvolver:
-- Pesquisa de validação
-- Entrevistas
-
 ## Vídeo Demo da solução
+https://www.youtube.com/watch?v=L-ohp0HZbSE
 
 ## Código abertos
 
