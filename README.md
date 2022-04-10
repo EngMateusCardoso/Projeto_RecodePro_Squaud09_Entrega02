@@ -17,3 +17,7 @@ https://projetoamornapele.azurewebsites.net/
 http://amornapele.somee.com/
 <br/>
 http://www.amornapele.somee.com/
+
+## Aplicação 2
+Mesmo projeto porém versão em Java, este Banco de Dados está conectado
+https://amornapele.netlify.app/
