@@ -10,3 +10,7 @@ https://www.youtube.com/watch?v=L-ohp0HZbSE
 
 ## Link da aplicação funcional 
 https://projetoamornapele.azurewebsites.net/
+
+## Link de aplicação Atualizado (link da Azure venceu 😔)
+http://amornapele.somee.com/
+http://www.amornapele.somee.com/
