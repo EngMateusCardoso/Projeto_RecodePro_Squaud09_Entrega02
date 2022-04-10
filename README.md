@@ -13,6 +13,7 @@ https://projetoamornapele.azurewebsites.net/
 
 ## Link de aplicação Atualizado
 (link da Azure venceu 😔)
+<br/>
 http://amornapele.somee.com/
 <br/>
 http://www.amornapele.somee.com/
