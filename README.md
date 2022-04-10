@@ -19,5 +19,6 @@ http://amornapele.somee.com/
 http://www.amornapele.somee.com/
 
 ## Aplicação 2
-Mesmo projeto porém versão em Java, este Banco de Dados está conectado
+Mesmo projeto porém versão em Java, este Banco de Dados está conectado.
+<br/>
 https://amornapele.netlify.app/
